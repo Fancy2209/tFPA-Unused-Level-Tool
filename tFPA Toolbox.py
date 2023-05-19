@@ -42,7 +42,7 @@ layout = [  [sg.Text('PAK File:'), sg.FileBrowse(key="PAK")],
             [sg.Button('Patch')] ]
 
 # Create the Window
-window = sg.Window('tFPA Toolbox', layout, size=(300, 100))
+window = sg.Window('tFPA Unused Level Tool', layout, size=(300, 100))
 # Event Loop to process "events" and get the "values" of the inputs
 while True:
     event, values = window.read()
