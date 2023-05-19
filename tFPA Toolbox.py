@@ -49,7 +49,6 @@ while True:
     PAK = values["PAK"]
     level = values["level"]
     if event == 'Patch': # if user closes window or clicks cancel
-        print(PAK, level, Levels)
         system("quickbms.exe -w -r -r" + "nyxquest.bms" + PAK + level)
 
     if sg.WIN_CLOSED == True:
