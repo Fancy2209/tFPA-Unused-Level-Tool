@@ -4,7 +4,7 @@
 ## THIS IS ONLY FOR Xbox 360 
 ### How to Use
 
-1. Extract the Xbox 360 game with (WxPirs)[https://digiex.net/attachments/wxpirs-1-1-rar.7438/]
+1. Extract the Xbox 360 game with [WxPirs](https://digiex.net/attachments/wxpirs-1-1-rar.7438/)
 2. Install Python (**Make sure to check the "Add to Path" and "Install Python Launcher" options while installing**)
 3. Open a cmd and type ``pip install pysimplegui numpy``
 4. Download the Repository
