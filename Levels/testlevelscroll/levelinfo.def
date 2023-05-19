@@ -1,0 +1,671 @@
+*GROUPS
+{
+	{ *SHORT_NAME "HUB"  					*SAVE_RESULTS 0 						*STORY 0 			*HUB_LEVEL 1 		*TEXT_LBL "LEVEL_INIT_HUBWORLD3"}
+	{ *SHORT_NAME "PODIUM"  				*SAVE_RESULTS 1 						*STORY 0 			*PODIUM 1}
+	{ *SHORT_NAME "TEST" 					*SAVE_RESULTS 0 						*STORY 0}	
+	{ *SHORT_NAME "ARENA" 	  				*TEXT_LBL "LEVEL_INIT_ARENA"			*STORY 0 								*PERSIST_INFO 1}
+	{ *SHORT_NAME "CHALLENGE" 				*TEXT_LBL "LEVEL_INIT_CHALLENGE"		*STORY 0			*OWN_SCORE 1		*PERSIST_INFO 1}
+	
+	{ *SHORT_NAME "TUTORIAL"				*TEXT_LBL "LEVEL_INIT_TUTORIAL"		 	*STORY 0 			*OWN_SCORE 0		*PERSIST_INFO 1
+		*RETURN_HUB_LEVEL "HUBWORLD3PRACTICE"
+		*RETURN_HUB_DOOR "Door02"
+		*EXPLORE_STARS
+		{
+			{	*NAME "StarCoin"	}
+			{	*NAME "StarCoin2"	}
+			{	*NAME "StarCoin3"	}
+		}
+	}
+	{ *SHORT_NAME "TUTORIAL_FAKE"			*TEXT_LBL "LEVEL_INIT_TUTORIAL"		 	*STORY 0 			*OWN_SCORE 0		*PERSIST_INFO 1
+		*RETURN_HUB_LEVEL "HUBWORLD3"
+		*RETURN_HUB_DOOR "Door05"
+		*EXPLORE_STARS
+		{
+			{	*NAME "StarCoin"	}
+			{	*NAME "StarCoin2"	}
+			{	*NAME "StarCoin3"	}
+		}
+	}
+	{ 
+		*SHORT_NAME "INTRO_LEVEL"  	
+		*STORY 0
+		*HUB_LEVEL 1 		
+		*TEXT_LBL "LEVEL_INIT_HUBWORLD3"
+		*WORLD "WORLD_0"
+	}
+	{ *SHORT_NAME "SQUIGGLEVILLE" 			*TEXT_LBL "LEVEL_INIT_SQUIGGLEVILLE"
+		*NAME_TEXTURE "Textures/LevelStart/Squiggleville.tex"
+		*BACKGROUND_TEXTURE "Textures/LevelStart/SquigglevilleBG.tex"
+		*LEVEL_TEXTURE "Textures/LevelStart/Level1.tex"
+		*GUI_CONFIG "GUI/TitleSquiggleville.gui"
+		*RETURN_HUB_LEVEL "HUBWORLD3SELECTLEVEL"
+		*RETURN_HUB_DOOR "Door05"
+		*REWARD	"HAT_MAJOR"
+		*WORLD "WORLD_3"
+		*START_DOOR "Door01"
+		*EXPLORE_STARS
+		{
+			{	*NAME "StarCoin1"	}
+			{	*NAME "StarCoin2"	}
+			{	*NAME "StarCoin3"	}
+		}
+		*TRIALS
+		{
+			{	*NAME "MiniTrial"	}
+		}
+		*CHALLENGE
+		{
+			{	*NAME "SCIENCE"	}
+		}
+	}
+	{ *SHORT_NAME "OUTERSQUIGGLEVILLE" 		*TEXT_LBL "LEVEL_INIT_OUTERSQUIGGLEVILLE"
+		*NAME_TEXTURE "Textures/LevelStart/OuterSquiggleVille.tex"
+		*BACKGROUND_TEXTURE "Textures/LevelStart/OuterSquiggleVilleBG.tex"
+		*LEVEL_TEXTURE "Textures/LevelStart/Level2.tex"
+		*GUI_CONFIG "GUI/TitleOuterSquiggleVille.gui"
+		*RETURN_HUB_LEVEL "HUBWORLD3SELECTLEVEL"
+		*RETURN_HUB_DOOR "Door04"
+		*REWARD	"HAT_WORKER"
+		*WORLD "WORLD_3"
+		*START_DOOR "Door01"
+		*EXPLORE_STARS
+		{
+			{	*NAME "StarCoin1"	}
+			{	*NAME "StarCoin2"	}
+			{	*NAME "StarCoin3"	}
+		}
+		*TRIALS
+		{
+			{	*NAME "MiniTrial"	}
+		}
+		*CHALLENGE
+		{
+			{	*NAME "ROOFTOPSRACE"	}
+		}
+		*BOTTLE
+		{
+			{	*NAME "Bottle"		}
+		}
+	}
+	{ *SHORT_NAME "FOREST" 					*TEXT_LBL "LEVEL_INIT_FOREST"
+		*NAME_TEXTURE "Textures/LevelStart/FroggyForest.tex"
+		*BACKGROUND_TEXTURE "Textures/LevelStart/FroggyForestBG.tex"
+		*LEVEL_TEXTURE "Textures/LevelStart/Level3.tex"
+		*GUI_CONFIG "GUI/TitleForest.gui"
+		*RETURN_HUB_LEVEL "HUBWORLD3SELECTLEVEL"
+		*RETURN_HUB_DOOR "Door03"
+		*REWARD	"HAT_ROBIN"
+		*WORLD "WORLD_3"
+		*START_DOOR "Door00"
+		*EXPLORE_STARS
+		{
+			{	*NAME "StarCoin1"	}
+			{	*NAME "StarCoin2"	}
+			{	*NAME "StarCoin3"	}
+		}
+		*TRIALS
+		{
+			{	*NAME "MiniTrial"	}
+		}
+		*CHALLENGE
+		{
+			{	*NAME "WORLD1_05"	}
+		}
+		*BOTTLE
+		{
+			{	*NAME "Bottle"		}
+		}
+	}
+	{ *SHORT_NAME "SWAMP" 					*TEXT_LBL "LEVEL_INIT_SWAMP"
+		*NAME_TEXTURE "Textures/LevelStart/Swamp.tex"
+		*BACKGROUND_TEXTURE "Textures/LevelStart/SwampBG.tex"
+		*LEVEL_TEXTURE "Textures/LevelStart/Level4.tex"
+		*GUI_CONFIG "GUI/TitleSwamp.gui"
+		*RETURN_HUB_LEVEL "HUBWORLD3SELECTLEVEL"
+		*RETURN_HUB_DOOR "Door02"
+		*REWARD	"PANT_PATTERN_16"
+		*WORLD "WORLD_3"
+		*START_DOOR "Door01"
+		*EXPLORE_STARS
+		{
+			{	*NAME "StarCoin1"	}
+			{	*NAME "StarCoin2"	}
+			{	*NAME "StarCoin3"	}
+		}
+		*CHALLENGE
+		{
+			{	*NAME "SWAMPGOLF"	}
+		}
+		*BOTTLE
+		{
+			{	*NAME "Bottle"		}
+		}
+		*TRIALS
+		{
+			{	*NAME "MiniTrial"	}
+		}
+	}	
+	{ *SHORT_NAME "BEACH" 				*TEXT_LBL "LEVEL_INIT_BEACH"
+		*NAME_TEXTURE "Textures/LevelStart/Beach.tex"
+		*BACKGROUND_TEXTURE "Textures/LevelStart/BeachBG.tex"
+		*LEVEL_TEXTURE "Textures/LevelStart/Level5.tex"
+		*GUI_CONFIG "GUI/TitleBeach.gui"
+		*RETURN_HUB_LEVEL "HUBWORLD3SELECTLEVEL"
+		*RETURN_HUB_DOOR "Door08"
+		*REWARD	"HAT_Mexican"
+		*WORLD "WORLD_3"
+		*START_DOOR "Door00"
+		*EXPLORE_STARS
+		{
+			{	*NAME "StarCoin1"	}
+			{	*NAME "StarCoin2"	}
+			{	*NAME "StarCoin3"	}
+		}
+		*CHALLENGE
+		{
+			{	*NAME "BEACHSANDCASTLES"	}
+		}
+		*BOTTLE
+		{
+			{	*NAME "Bottle"		}
+		}
+		*TRIALS
+		{
+			{	*NAME "MiniTrial"	}
+		}
+	}	
+	{ *SHORT_NAME "DOWNWARDCAVERNS" 	*TEXT_LBL "LEVEL_INIT_DOWNWARDCAVERNS"
+		*NAME_TEXTURE "Textures/LevelStart/DownwardCavern.tex"
+		*BACKGROUND_TEXTURE "Textures/LevelStart/DownwardCavernBG.tex"
+		*LEVEL_TEXTURE "Textures/LevelStart/Level6.tex"
+		*GUI_CONFIG "GUI/TitleDownwardCavern.gui"
+		*RETURN_HUB_LEVEL "HUBWORLD3SELECTLEVEL"
+		*RETURN_HUB_DOOR "Door07"
+		*REWARD	"HAT_Bath"
+		*WORLD "WORLD_3"
+		*START_DOOR "Door00"
+		*EXPLORE_STARS
+		{
+			{	*NAME "StarCoin1"	}
+			{	*NAME "StarCoin2"	}
+			{	*NAME "StarCoin3"	}
+		}
+		*TRIALS
+		{
+			{	*NAME "MiniTrial"	}
+		}
+		*CHALLENGE
+		{
+			{	*NAME "DOWNWARDCAVERNSTRICKS"	}
+		}
+		*BOTTLE
+		{
+			{	*NAME "Bottle"		}
+		}
+	}	
+	{ *SHORT_NAME "SUNKENSHIPTOWER" 	*TEXT_LBL "LEVEL_INIT_SUNKENSHIPTOWER"
+		*NAME_TEXTURE "Textures/LevelStart/SunkenShipTower.tex"
+		*BACKGROUND_TEXTURE "Textures/LevelStart/SunkenShipTowerBG.tex"
+		*LEVEL_TEXTURE "Textures/LevelStart/Level7.tex"
+		*GUI_CONFIG "GUI/TitleSunkenShipTower.gui"
+		*RETURN_HUB_LEVEL "HUBWORLD3SELECTLEVEL"
+		*RETURN_HUB_DOOR "Door06"
+		*REWARD	"WEAPON_PESCAO"
+		*WORLD "WORLD_3"
+		*START_DOOR "Door00"
+		*EXPLORE_STARS
+		{
+			{	*NAME "StarCoin1"	}
+			{	*NAME "StarCoin2"	}
+			{	*NAME "StarCoin3"	}
+		}
+		*TRIALS
+		{
+			{	*NAME "MiniTrial"	}
+		}
+		*CHALLENGE
+		{
+			{	*NAME "SUNKENSHIPTOWERGOLF"	}
+		}
+		*BOTTLE
+		{
+			{	*NAME "Bottle"		}
+		}
+	}
+	{ *SHORT_NAME "PIRATESHIP" 			*TEXT_LBL "LEVEL_INIT_PIRATESHIP"
+		*NAME_TEXTURE "Textures/LevelStart/PiratePrincess.tex"
+		*BACKGROUND_TEXTURE "Textures/LevelStart/PiratePrincessBG.tex"
+		*LEVEL_TEXTURE "Textures/LevelStart/Level8.tex"
+		*GUI_CONFIG "GUI/TitlePiratePrincess.gui"
+		*RETURN_HUB_LEVEL "HUBWORLD3SELECTLEVEL"
+		*RETURN_HUB_DOOR "Door09"
+		*REWARD	"WEAPON_SWORD"
+		*WORLD "WORLD_3"
+		*START_DOOR "Door00"
+		*EXPLORE_STARS
+		{
+			{	*NAME "StarCoin1"	}
+			{	*NAME "StarCoin2"	}
+			{	*NAME "StarCoin3"	}
+		}
+		*TRIALS
+		{
+			{	*NAME "MiniTrial"	}
+		}
+		*BOTTLE
+		{
+			{	*NAME "Bottle"		}
+		}
+	}	
+	{ *SHORT_NAME "UPWARDCAVERNS" 		*TEXT_LBL "LEVEL_INIT_UPWARDCAVERNS"
+		*NAME_TEXTURE "Textures/LevelStart/UpwardCavern.tex"
+		*BACKGROUND_TEXTURE "Textures/LevelStart/UpwardCavernBG.tex"
+		*LEVEL_TEXTURE "Textures/LevelStart/Level9.tex"
+		*GUI_CONFIG "GUI/TitleUpwardCavern.gui"
+		*RETURN_HUB_LEVEL "HUBWORLD3SELECTLEVEL"
+		*RETURN_HUB_DOOR "Door11"
+		*REWARD	"HAT_king"
+		*WORLD "WORLD_3"
+		*START_DOOR "Door01"
+		*EXPLORE_STARS
+		{
+			{	*NAME "StarCoin1"	}
+			{	*NAME "StarCoin2"	}
+			{	*NAME "StarCoin3"	}
+		}
+		*CHALLENGE
+		{
+			{	*NAME "UPWARDCAVERNSBATS"	}
+		}
+		*BOTTLE
+		{
+			{	*NAME "Bottle"		}
+		}
+		*TRIALS
+		{
+			{	*NAME "MiniTrial"	}
+		}
+	}	
+	{ *SHORT_NAME "FORGOTTENISLAND" 	*TEXT_LBL "LEVEL_INIT_FORGOTTENISLAND"
+		*NAME_TEXTURE "Textures/LevelStart/ForgottenIsland.tex"
+		*BACKGROUND_TEXTURE "Textures/LevelStart/ForgottenIslandBG.tex"
+		*LEVEL_TEXTURE "Textures/LevelStart/Level10.tex"
+		*GUI_CONFIG "GUI/TitleForgottenIsland.gui"
+		*RETURN_HUB_LEVEL "HUBWORLD3SELECTLEVEL"
+		*RETURN_HUB_DOOR "Door12"
+		*REWARD	"HAT_Tiki"
+		*WORLD "WORLD_3"
+		*START_DOOR "Door00"
+		*EXPLORE_STARS
+		{
+			{	*NAME "StarCoin1"	}
+			{	*NAME "StarCoin2"	}
+			{	*NAME "StarCoin3"	}
+		}
+		*TRIALS
+		{
+			{	*NAME "MiniTrial"	}
+		}
+		*CHALLENGE
+		{
+			{	*NAME "FORGOTTENISLANDRACE"	}
+		}
+		*BOTTLE
+		{
+			{	*NAME "Bottle"		}
+		}
+	}
+	{ *SHORT_NAME "NINJAINFESTATION" 	*TEXT_LBL "LEVEL_INIT_NINJAINFESTATION"
+		*NAME_TEXTURE "Textures/LevelStart/NinjaInfestation.tex"
+		*BACKGROUND_TEXTURE "Textures/LevelStart/PiratePrincessBG.tex"
+		*LEVEL_TEXTURE "Textures/LevelStart/Level11.tex"
+		*GUI_CONFIG "GUI/TitleNinjaInfestation.gui"
+		*RETURN_HUB_LEVEL "HUBWORLD3SELECTLEVEL"
+		*RETURN_HUB_DOOR "Door13"
+		*REWARD	"HAT_Captain"
+		*WORLD "WORLD_3"
+		*START_DOOR "Door00"
+		*EXPLORE_STARS
+		{
+			{	*NAME "StarCoin1"	}
+			{	*NAME "StarCoin2"	}
+			{	*NAME "StarCoin3"	}
+		}
+		*TRIALS
+		{
+			{	*NAME "MiniTrial"	}
+		}
+	}
+	
+	{ *SHORT_NAME "ENDOFGAME" 	*TEXT_LBL "LEVEL_INIT_NINJAINFESTATION"		
+		*RETURN_HUB_LEVEL "HUBWORLD3"
+		*RETURN_HUB_DOOR "Door01"
+		*START_DOOR "Door00"
+		*STORY 0 			*OWN_SCORE 0
+	}
+	
+	{ *SHORT_NAME "WORLD1_01" 			*TEXT_LBL "LEVEL_INIT_WORLD1_01" 
+		*RETURN_HUB_LEVEL "HUBWORLD3_WORLD1"
+		*RETURN_HUB_DOOR "Door03"
+		*REWARD	"PANT_PATTERN_17"
+		*WORLD "WORLD_1"
+		*EXPLORE_STARS
+		{
+			{	*NAME "StarCoin1"	}
+			{	*NAME "StarCoin2"	}
+			{	*NAME "StarCoin3"	}
+		}
+		*TRIALS
+		{
+			{	*NAME "MiniTrial"	}
+		}
+	}
+	{ *SHORT_NAME "WORLD1_02" 			*TEXT_LBL "LEVEL_INIT_WORLD1_02" 
+		*RETURN_HUB_LEVEL "HUBWORLD3_WORLD1"
+		*RETURN_HUB_DOOR "Door02"
+		*REWARD	"WEAPON_FLORET"
+		*WORLD "WORLD_1"
+		*EXPLORE_STARS
+		{
+			{	*NAME "StarCoin1"	}
+			{	*NAME "StarCoin2"	}
+			{	*NAME "StarCoin3"	}
+		}
+		*TRIALS
+		{
+			{	*NAME "MiniTrial"	}
+		}
+	}
+	{ *SHORT_NAME "WORLD1_03" 			*TEXT_LBL "LEVEL_INIT_WORLD1_03" 
+		*RETURN_HUB_LEVEL "HUBWORLD3_WORLD1"
+		*RETURN_HUB_DOOR "Door01"
+		*REWARD	"HAT_PENGUIN"
+		*WORLD "WORLD_1"
+		*EXPLORE_STARS
+		{
+			{	*NAME "StarCoin1"	}
+			{	*NAME "StarCoin2"	}
+			{	*NAME "StarCoin3"	}
+		}
+		*TRIALS
+		{
+			{	*NAME "MiniTrial"	}			
+		}
+	}
+	{ 	*SHORT_NAME "WORLD2_01" 		*TEXT_LBL "LEVEL_INIT_WORLD2_01" 
+		*RETURN_HUB_LEVEL "HUBWORLD3_WORLD2"
+		*RETURN_HUB_DOOR "Door05"
+		*REWARD	"HAT_Punkhair"
+		*WORLD "WORLD_2"
+		*EXPLORE_STARS
+		{
+			{	*NAME "StarCoin1"	}
+			{	*NAME "StarCoin2"	}
+			{	*NAME "StarCoin3"	}
+		}
+		*TRIALS
+		{
+			{	*NAME "MiniTrial"	}
+		}
+		*GOLF
+		{
+			{	*NAME "Trigger"		}
+		}
+		*TROPHY
+		{
+			{	*NAME "Trophy"		*ANIM_ON "Abeja"	*ANIM_OFF "AbejaOff" }
+		}
+	}
+	{ *SHORT_NAME "WORLD2_02" 			*TEXT_LBL "LEVEL_INIT_WORLD2_02"  
+		*RETURN_HUB_LEVEL "HUBWORLD3_WORLD2"
+		*RETURN_HUB_DOOR "Door06"
+		*REWARD	"MASK_Chicken"
+		*WORLD "WORLD_2"
+		*EXPLORE_STARS
+		{
+			{	*NAME "StarCoin1"	}
+			{	*NAME "StarCoin2"	}
+			{	*NAME "StarCoin3"	}
+		}
+		*TRIALS
+		{
+			{	*NAME "MiniTrial"	}
+		}
+		*GOLF
+		{
+			{	*NAME "Trigger"		}
+		}
+		*TROPHY
+		{
+			{	*NAME "Trophy"		*ANIM_ON "Alien"	*ANIM_OFF "AlienOff" }
+		}
+	}
+	{ *SHORT_NAME "WORLD2_03" 			*TEXT_LBL "LEVEL_INIT_WORLD2_03"  
+		*RETURN_HUB_LEVEL "HUBWORLD3_WORLD2"
+		*RETURN_HUB_DOOR "Door07"
+		*REWARD	"PANT_PATTERN_15"
+		*WORLD "WORLD_2"
+		*EXPLORE_STARS
+		{
+			{	*NAME "StarCoin1"	}
+			{	*NAME "StarCoin2"	}
+			{	*NAME "StarCoin3"	}
+		}
+		*TRIALS
+		{
+			{	*NAME "MiniTrial"	}
+		}
+		*GOLF
+		{
+			{	*NAME "Trigger"		}
+		}
+		*TROPHY
+		{
+			{	*NAME "Trophy"		*ANIM_ON "TRara"	*ANIM_OFF "TRaraOff" }
+		}
+	}
+	{ *SHORT_NAME "WORLD2_04" 			*TEXT_LBL "LEVEL_INIT_WORLD2_04"  
+		*RETURN_HUB_LEVEL "HUBWORLD3_WORLD2"
+		*RETURN_HUB_DOOR "Door03"
+		*REWARD	"WEAPON_WAND"
+		*WORLD "WORLD_2"
+		*EXPLORE_STARS
+		{
+			{	*NAME "StarCoin1"	}
+			{	*NAME "StarCoin2"	}
+			{	*NAME "StarCoin3"	}
+		}
+		*TRIALS
+		{
+			{	*NAME "MiniTrial"	}
+		}
+		*GOLF
+		{
+			{	*NAME "Trigger"		}
+		}
+		*TROPHY
+		{
+			{	*NAME "Trophy"		*ANIM_ON "Cerveza"	*ANIM_OFF "CervezaOff" }
+		}
+	}
+	{ 	*SHORT_NAME "WORLD2_05" 		*TEXT_LBL "LEVEL_INIT_WORLD2_05" 
+		*RETURN_HUB_LEVEL "HUBWORLD3_WORLD2"
+		*RETURN_HUB_DOOR "Door02"
+		*REWARD	"HAT_viking"
+		*WORLD "WORLD_2"
+		*EXPLORE_STARS
+		{
+			{	*NAME "StarCoin1"	}
+			{	*NAME "StarCoin2"	}
+			{	*NAME "StarCoin3"	}
+		}
+		*TRIALS
+		{
+			{	*NAME "MiniTrial"	}
+		}
+		*GOLF
+		{
+			{	*NAME "Trigger"		}
+		}
+		*TROPHY
+		{
+			{	*NAME "Trophy"		*ANIM_ON "Peineta"	*ANIM_OFF "PeinetaOff" }
+		}
+	}
+	{ *SHORT_NAME "WORLD2_06" 			*TEXT_LBL "LEVEL_INIT_WORLD2_06" 
+	  *RETURN_HUB_LEVEL "HUBWORLD3_WORLD2"
+	  *RETURN_HUB_DOOR "Door01"
+	  *REWARD	"WEAPON_LIGHT"
+	  *WORLD "WORLD_2"
+	  *EXPLORE_STARS
+		{
+			{	*NAME "StarCoin1"	}
+			{	*NAME "StarCoin2"	}
+			{	*NAME "StarCoin3"	}
+		}
+		*TRIALS
+		{
+			{	*NAME "MiniTrial"	}
+		}
+		*GOLF
+		{
+			{	*NAME "Trigger"		}
+		}
+		*TROPHY
+		{
+			{	*NAME "Trophy"		*ANIM_ON "Siniestro"	*ANIM_OFF "SiniestroOff" }
+		}
+	}			
+}
+
+*LEVELS
+{
+	{ *SHORT_NAME "TEST"					*LEVEL_GROUP "TEST"	 			*FILE_NAME "Levels/TestLevel.def"			*MUSIC "Musics/Track02.ogg" 				*QUEST_TYPE "QUEST_KILL_ENEMY" 	*QUEST_DATA "Quest/Test.def" }
+	
+	{ *SHORT_NAME "HUBWORLD3"				*LEVEL_GROUP "HUB"	 			*FILE_NAME "Levels/HubWorld3.def"				*MUSIC "Musics/FP_HUB_Music.ogg" 			*QUEST_TYPE "QUEST_HUB" 		*QUEST_DATA "" 									*TEXT_LBL "LEVEL_INIT_HUBWORLD3" 													*TRIAL_AVAILABLE 1      }
+	{ *SHORT_NAME "HUBWORLD3SELECTLEVEL"	*LEVEL_GROUP "HUB"	 			*FILE_NAME "Levels/HubWorld3SelectLevel.def"	*MUSIC "Musics/Track05.ogg" 				*QUEST_TYPE "QUEST_HUB" 		*QUEST_DATA "" 									*TEXT_LBL "LEVEL_INIT_HUBWORLD3SELECTLEVEL"			*DEFAULT_LOAD_HINT 1}	
+	{ *SHORT_NAME "HUBWORLD3PRACTICE"		*LEVEL_GROUP "HUB"	 			*FILE_NAME "Levels/HubWorld3Practice.def"		*MUSIC "Musics/Track05.ogg" 				*QUEST_TYPE "QUEST_HUB" 		*QUEST_DATA "" 									*TEXT_LBL "LEVEL_INIT_HUBWORLD3PRACTICE" 			*DEFAULT_LOAD_HINT 1			*TRIAL_AVAILABLE 1      }	
+	{ *SHORT_NAME "HUBWORLD3BEDROOM"		*LEVEL_GROUP "TEST"	 			*FILE_NAME "Levels/TestLevelScroll.def"		*MUSIC "Musics/Track02.ogg" 				*QUEST_TYPE "QUEST_KILL_ENEMY" 		*QUEST_DATA "Quest/Test.def" 									*TEXT_LBL "LEVEL_INIT_HUBWORLD3BEDROOM" 			*DEFAULT_LOAD_HINT 1			*TRIAL_AVAILABLE 1      }	
+	{ *SHORT_NAME "INTRO_LEVEL"				*LEVEL_GROUP "TEST"	 	*FILE_NAME "Levels/TestLevelScroll.def"	*MUSIC "Musics/Track02.ogg" 								*QUEST_TYPE "QUEST_KILL_ENEMY" 		*QUEST_DATA "Quest/Test.def" 									*TEXT_LBL "LEVEL_INIT_HUBWORLD3BEDROOM" 			*DEFAULT_LOAD_HINT 1			*TRIAL_AVAILABLE 1      }	
+	{ *SHORT_NAME "HUBPODIUM"				*LEVEL_GROUP "PODIUM"			*FILE_NAME "Levels/HubPodium.def"				*MUSIC "Musics/Track05.ogg" 				*QUEST_TYPE "QUEST_PODIUM" 		*QUEST_DATA "Quest/HubPodium_OP02.def" 			*TEXT_LBL "LEVEL_INIT_HUBPODIUM" 					*DEFAULT_LOAD_HINT 1}
+	{ *SHORT_NAME "HUBPODIUM_OP02"			*LEVEL_GROUP "PODIUM"			*FILE_NAME "Levels/HubPodium_OP02.def"			*MUSIC "Musics/Track05.ogg" 				*QUEST_TYPE "QUEST_PODIUM" 		*QUEST_DATA "Quest/HubPodium_OP02.def" 			*TEXT_LBL "LEVEL_INIT_HUBPODIUM" 					*DEFAULT_LOAD_HINT 1}
+	{ *SHORT_NAME "HUBPODIUM_OP03"			*LEVEL_GROUP "PODIUM"			*FILE_NAME "Levels/HubPodium_OP03.def"			*MUSIC "Musics/Track05.ogg" 				*QUEST_TYPE "QUEST_PODIUM" 		*QUEST_DATA "Quest/HubPodium_OP02.def" 			*TEXT_LBL "LEVEL_INIT_HUBPODIUM" 					*DEFAULT_LOAD_HINT 1}
+	{ *SHORT_NAME "HUBWORLD3_WORLD1"		*LEVEL_GROUP "HUB"	 			*FILE_NAME "Levels/HubWorld3_World1.def"		*MUSIC "Musics/Track05.ogg" 				*QUEST_TYPE "QUEST_HUB" 		*QUEST_DATA "" 									*TEXT_LBL "LEVEL_INIT_HUBWORLD3_WORLD1"				*DEFAULT_LOAD_HINT 1}
+	{ *SHORT_NAME "HUBWORLD3_WORLD2"		*LEVEL_GROUP "HUB"	 			*FILE_NAME "Levels/HubWorld3_World2.def"		*MUSIC "Musics/Track05.ogg" 				*QUEST_TYPE "QUEST_HUB" 		*QUEST_DATA "" 									*TEXT_LBL "LEVEL_INIT_HUBWORLD3_WORLD2" 			*DEFAULT_LOAD_HINT 1}
+	
+	{ *SHORT_NAME "KOTH01"				*LEVEL_GROUP "ARENA"	 			*FILE_NAME "Levels/KotH01.def"				*MUSIC "Musics/W3_Beach.ogg" 					*QUEST_TYPE "QUEST_KING_HILL" 	*QUEST_DATA "Quest/KingOfTheHill.def" 			*TEXT_LBL "LEVEL_INIT_KOTH1"  				*MULTIPLAYER "KOTH"				 *TRIAL_AVAILABLE 1      }
+	{ *SHORT_NAME "KOTH02"				*LEVEL_GROUP "ARENA"	 			*FILE_NAME "Levels/KotH02.def"				*MUSIC "Musics/Track04.ogg" 					*QUEST_TYPE "QUEST_KING_HILL" 	*QUEST_DATA "Quest/KingOfTheHill.def" 			*TEXT_LBL "LEVEL_INIT_KOTH2"				*MULTIPLAYER "KOTH"				 *TRIAL_AVAILABLE 1      }
+	{ *SHORT_NAME "KOTH03"				*LEVEL_GROUP "ARENA"	 			*FILE_NAME "Levels/KotH03.def"				*MUSIC "Musics/W3_Swamp.ogg" 					*QUEST_TYPE "QUEST_KING_HILL" 	*QUEST_DATA "Quest/KingOfTheHill.def" 			*TEXT_LBL "LEVEL_INIT_KOTH3"				*MULTIPLAYER "KOTH"				 }
+	{ *SHORT_NAME "KOTH04"				*LEVEL_GROUP "ARENA"	 			*FILE_NAME "Levels/KotH04.def"				*MUSIC "Musics/W3_Downward&Upward_Caverns.ogg" 	*QUEST_TYPE "QUEST_KING_HILL" 	*QUEST_DATA "Quest/KingOfTheHill.def" 			*TEXT_LBL "LEVEL_INIT_KOTH4"				*MULTIPLAYER "KOTH"				 }
+	{ *SHORT_NAME "KOTH05"				*LEVEL_GROUP "ARENA"	 			*FILE_NAME "Levels/KotH05.def"				*MUSIC "Musics/W3_Sunken_Ship_Tower.ogg" 		*QUEST_TYPE "QUEST_KING_HILL" 	*QUEST_DATA "Quest/KingOfTheHill.def" 			*TEXT_LBL "LEVEL_INIT_KOTH5"				*MULTIPLAYER "KOTH"				 }
+	{ *SHORT_NAME "KOTH06"				*LEVEL_GROUP "ARENA"	 			*FILE_NAME "Levels/KotH06.def"				*MUSIC "Musics/W3_Forest.ogg" 					*QUEST_TYPE "QUEST_KING_HILL" 	*QUEST_DATA "Quest/KingOfTheHill.def" 			*TEXT_LBL "LEVEL_INIT_KOTH6"				*MULTIPLAYER "KOTH"				*UNLOCK_CONDITION "STARS" 	*UNLOCK_DATA "5"		*UNLOCK_TEXT "TEXT_LOCK_KOTH06"}
+	{ *SHORT_NAME "KOTH07"				*LEVEL_GROUP "ARENA"	 			*FILE_NAME "Levels/KotH07.def"				*MUSIC "Musics/Track02.ogg" 					*QUEST_TYPE "QUEST_KING_HILL" 	*QUEST_DATA "Quest/KingOfTheHill.def" 			*TEXT_LBL "LEVEL_INIT_KOTH7"				*MULTIPLAYER "KOTH"				*UNLOCK_CONDITION "STARS" 	*UNLOCK_DATA 15"		*UNLOCK_TEXT "TEXT_LOCK_KOTH07"}
+	{ *SHORT_NAME "KOTH08"				*LEVEL_GROUP "ARENA"	 			*FILE_NAME "Levels/KotH08.def"				*MUSIC "Musics/W3_Pirate_Ship.ogg" 				*QUEST_TYPE "QUEST_KING_HILL" 	*QUEST_DATA "Quest/KingOfTheHill.def" 			*TEXT_LBL "LEVEL_INIT_KOTH8"				*MULTIPLAYER "KOTH"				*UNLOCK_CONDITION "STARS" 	*UNLOCK_DATA "25"		*UNLOCK_TEXT "TEXT_LOCK_KOTH08"}
+	
+	{ *SHORT_NAME "WORLD1_01"			*LEVEL_GROUP "WORLD1_01" 			*FILE_NAME "Levels/World1_01.def"			*MUSIC "Musics/Track04.ogg" 				*QUEST_TYPE "QUEST_LEVEL" 		*QUEST_DATA "Quest/World1_01.def" }
+	{ *SHORT_NAME "WORLD1_01A"			*LEVEL_GROUP "WORLD1_01"			*FILE_NAME "Levels/World1_01a.def"			*MUSIC "Musics/Track06.ogg" 				*QUEST_TYPE "QUEST_NONE" 		*QUEST_DATA "" 							*DEFAULT_LOAD_HINT 1}
+	{ *SHORT_NAME "WORLD1_01B"			*LEVEL_GROUP "WORLD1_01"			*FILE_NAME "Levels/World1_01b.def"			*MUSIC "Musics/Track06.ogg" 				*QUEST_TYPE "QUEST_NONE" 		*QUEST_DATA "" 							*DEFAULT_LOAD_HINT 1}
+	{ *SHORT_NAME "WORLD1_01_B01"		*LEVEL_GROUP "WORLD1_01" 			*FILE_NAME "Levels/World1_01_B01.def"		*MUSIC "Musics/Track06.ogg" 				*QUEST_TYPE "QUEST_NONE" 		*QUEST_DATA "" 							*DEFAULT_LOAD_HINT 1}
+	{ *SHORT_NAME "WORLD1_01_C01"		*LEVEL_GROUP "WORLD1_01" 			*FILE_NAME "Levels/World1_01_C01.def"		*MUSIC "Musics/Track06.ogg" 				*QUEST_TYPE "QUEST_NONE" 		*QUEST_DATA "" 							*DEFAULT_LOAD_HINT 1}
+	{ *SHORT_NAME "WORLD1_02"			*LEVEL_GROUP "WORLD1_02"			*FILE_NAME "Levels/World1_02.def"			*MUSIC "Musics/Track04.ogg" 				*QUEST_TYPE "QUEST_LEVEL" 		*QUEST_DATA "Quest/World1_02.def" }
+	{ *SHORT_NAME "WORLD1_02_B03"		*LEVEL_GROUP "WORLD1_02"			*FILE_NAME "Levels/World1_02_B03.def"		*MUSIC "Musics/Track06.ogg" 				*QUEST_TYPE "QUEST_NONE" 		*QUEST_DATA "" 							*DEFAULT_LOAD_HINT 1}
+	{ *SHORT_NAME "WORLD1_02_B04"		*LEVEL_GROUP "WORLD1_02"			*FILE_NAME "Levels/World1_02_B04.def"		*MUSIC "Musics/Track06.ogg" 				*QUEST_TYPE "QUEST_NONE" 		*QUEST_DATA "" 							*DEFAULT_LOAD_HINT 1}
+	{ *SHORT_NAME "WORLD1_02_B05"		*LEVEL_GROUP "WORLD1_02"			*FILE_NAME "Levels/World1_02_B05.def"		*MUSIC "Musics/Track06.ogg" 				*QUEST_TYPE "QUEST_NONE" 		*QUEST_DATA "" 							*DEFAULT_LOAD_HINT 1}
+	{ *SHORT_NAME "WORLD1_02_B07"		*LEVEL_GROUP "WORLD1_02"			*FILE_NAME "Levels/World1_02_B07.def"		*MUSIC "Musics/Track06.ogg" 				*QUEST_TYPE "QUEST_NONE" 		*QUEST_DATA "" 							*DEFAULT_LOAD_HINT 1}
+	{ *SHORT_NAME "WORLD1_03"			*LEVEL_GROUP "WORLD1_03"			*FILE_NAME "Levels/World1_03.def"			*MUSIC "Musics/Track04.ogg" 				*QUEST_TYPE "QUEST_LEVEL" 		*QUEST_DATA "Quest/World1_03.def" }
+	{ *SHORT_NAME "WORLD1_03A"			*LEVEL_GROUP "WORLD1_03"			*FILE_NAME "Levels/World1_03a.def"			*MUSIC "Musics/Track07.ogg" 				*QUEST_TYPE "QUEST_OPEN_DOOR" 	*QUEST_DATA "Quest/World1_03a.def" 		*DEFAULT_LOAD_HINT 1}
+	{ *SHORT_NAME "WORLD1_03_B08"		*LEVEL_GROUP "WORLD1_03"			*FILE_NAME "Levels/World1_03_B08.def"		*MUSIC "Musics/Track06.ogg" 				*QUEST_TYPE "QUEST_TIME" 		*QUEST_DATA "Quest/World1_03_B08.def" 	*DEFAULT_LOAD_HINT 1}
+ 		
+	{ *SHORT_NAME "WORLD2_00"			*LEVEL_GROUP "WORLD2_01"			*FILE_NAME "Levels/World2_00.def"			*MUSIC "Musics/FP_Cinematic.ogg" 				*QUEST_TYPE "QUEST_NONE" 		*QUEST_DATA "" }
+	{ *SHORT_NAME "WORLD2_01"			*LEVEL_GROUP "WORLD2_01"			*FILE_NAME "Levels/World2_01.def"			*MUSIC "Musics/W3_Downward&Upward_Caverns.ogg" 	*QUEST_TYPE "QUEST_LEVEL" 		*QUEST_DATA "Quest/World2_01.def" }
+	{ *SHORT_NAME "WORLD2_01_B01"		*LEVEL_GROUP "WORLD2_01"			*FILE_NAME "Levels/World2_01_B01.def"		*MUSIC "Musics/FP_Generic_3.ogg" 				*QUEST_TYPE "QUEST_NONE" 		*QUEST_DATA "" 						*DEFAULT_LOAD_HINT 1}
+	{ *SHORT_NAME "WORLD2_01A"			*LEVEL_GROUP "WORLD2_01"			*FILE_NAME "Levels/World2_01a.def"			*MUSIC "Musics/Track06.ogg" 					*QUEST_TYPE "QUEST_NONE" 		*QUEST_DATA "" 						*DEFAULT_LOAD_HINT 1}
+	{ *SHORT_NAME "WORLD2_02"			*LEVEL_GROUP "WORLD2_02"			*FILE_NAME "Levels/World2_02.def"			*MUSIC "Musics/FP_Generic_3.ogg" 				*QUEST_TYPE "QUEST_LEVEL" 		*QUEST_DATA "Quest/World2_02.def" }
+	{ *SHORT_NAME "WORLD2_02_B01"		*LEVEL_GROUP "WORLD2_02" 			*FILE_NAME "Levels/World2_02_B01.def"		*MUSIC "Musics/Track06.ogg" 					*QUEST_TYPE "QUEST_NONE" 		*QUEST_DATA "" 						*DEFAULT_LOAD_HINT 1}
+	{ *SHORT_NAME "WORLD2_02A"			*LEVEL_GROUP "WORLD2_02"			*FILE_NAME "Levels/World2_02a.def"			*MUSIC "Musics/W3_Forest.ogg" 					*QUEST_TYPE "QUEST_NONE" 		*QUEST_DATA "" 						*DEFAULT_LOAD_HINT 1}
+	{ *SHORT_NAME "WORLD2_03"			*LEVEL_GROUP "WORLD2_03" 			*FILE_NAME "Levels/World2_03.def"			*MUSIC "Musics/W3_Squiggleville.ogg" 			*QUEST_TYPE "QUEST_LEVEL" 		*QUEST_DATA "Quest/World2_03.def" }
+	{ *SHORT_NAME "WORLD2_03A"			*LEVEL_GROUP "WORLD2_03"			*FILE_NAME "Levels/World2_03a.def"			*MUSIC "Musics/Track06.ogg" 					*QUEST_TYPE "QUEST_NONE" 		*QUEST_DATA "" 						*DEFAULT_LOAD_HINT 1}
+	{ *SHORT_NAME "WORLD2_03_B01"		*LEVEL_GROUP "WORLD2_03" 			*FILE_NAME "Levels/World2_03_B01.def"		*MUSIC "Musics/Track06.ogg" 					*QUEST_TYPE "QUEST_NONE" 		*QUEST_DATA "" 						*DEFAULT_LOAD_HINT 1}
+	{ *SHORT_NAME "WORLD2_03_B02"		*LEVEL_GROUP "WORLD2_03" 			*FILE_NAME "Levels/World2_03_B02.def"		*MUSIC "Musics/FP_Generic_4.ogg" 				*QUEST_TYPE "QUEST_NONE" 		*QUEST_DATA "" 						*DEFAULT_LOAD_HINT 1}
+	{ *SHORT_NAME "WORLD2_04"			*LEVEL_GROUP "WORLD2_04" 			*FILE_NAME "Levels/World2_04.def"			*MUSIC "Musics/FP_Generic_2.ogg" 				*QUEST_TYPE "QUEST_LEVEL" 		*QUEST_DATA "Quest/World2_04.def" }
+	{ *SHORT_NAME "WORLD2_04_B01"		*LEVEL_GROUP "WORLD2_04" 			*FILE_NAME "Levels/World2_04_B01.def"		*MUSIC "Musics/Track06.ogg" 					*QUEST_TYPE "QUEST_NONE" 		*QUEST_DATA "" 						*DEFAULT_LOAD_HINT 1}
+	{ *SHORT_NAME "WORLD2_04A"			*LEVEL_GROUP "WORLD2_04"			*FILE_NAME "Levels/World2_04a.def"			*MUSIC "Musics/W3_Beach.ogg" 					*QUEST_TYPE "QUEST_NONE" 		*QUEST_DATA "" 						*DEFAULT_LOAD_HINT 1}	
+	{ *SHORT_NAME "WORLD2_05"			*LEVEL_GROUP "WORLD2_05" 			*FILE_NAME "Levels/World2_05.def"			*MUSIC "Musics/W2_Cin_2.ogg" 					*QUEST_TYPE "QUEST_LEVEL" 		*QUEST_DATA "Quest/World2_05.def" }
+	{ *SHORT_NAME "WORLD2_05_B01"		*LEVEL_GROUP "WORLD2_05" 			*FILE_NAME "Levels/World2_05_B01.def"		*MUSIC "Musics/Track06.ogg" 					*QUEST_TYPE "QUEST_NONE" 		*QUEST_DATA "" 						*DEFAULT_LOAD_HINT 1}
+	{ *SHORT_NAME "WORLD2_05A"			*LEVEL_GROUP "WORLD2_05"			*FILE_NAME "Levels/World2_05a.def"			*MUSIC "Musics/Track06.ogg" 					*QUEST_TYPE "QUEST_NONE" 		*QUEST_DATA "" 						*DEFAULT_LOAD_HINT 1}
+	{ *SHORT_NAME "WORLD2_06"			*LEVEL_GROUP "WORLD2_06" 			*FILE_NAME "Levels/World2_06.def"		 	*MUSIC "Musics/W3_Beach.ogg" 					*QUEST_TYPE "QUEST_LEVEL" 		*QUEST_DATA "Quest/World2_06.def" }
+	{ *SHORT_NAME "WORLD2_06_B01"		*LEVEL_GROUP "WORLD2_06" 			*FILE_NAME "Levels/World2_06_B01.def"		*MUSIC "Musics/FP_Generic_1.ogg" 				*QUEST_TYPE "QUEST_NONE" 		*QUEST_DATA "" 						*DEFAULT_LOAD_HINT 1}
+	{ *SHORT_NAME "WORLD2_06A"			*LEVEL_GROUP "WORLD2_06"			*FILE_NAME "Levels/World2_06a.def"			*MUSIC "Musics/Track07.ogg" 					*QUEST_TYPE "QUEST_OPEN_DOOR" 	*QUEST_DATA "Quest/World2_06a.def" 	*DEFAULT_LOAD_HINT 1} 
+	
+	{ *SHORT_NAME "RACEARCADE2"			*LEVEL_GROUP "CHALLENGE"		 	*FILE_NAME "Levels/RaceArcade2.def"			*MUSIC "Musics/W3_Challenge_4.ogg" 				*QUEST_TYPE "QUEST_RACE" 		*QUEST_DATA "Quest/RaceArcade2.def"				*TEXT_LBL "LEVEL_INIT_RACEARCADE2"				*MULTIPLAYER "RACE"		 	*LEADERBOARD "CHALLENGE18"									      														*ARCADE_POSITION 1 															*TRIAL_AVAILABLE 1}
+	{ *SHORT_NAME "WORLD2_02RACE"		*LEVEL_GROUP "CHALLENGE"			*FILE_NAME "Levels/World2_02Race.def"		*MUSIC "Musics/W3_Tricks.ogg" 					*QUEST_TYPE "QUEST_RACE" 		*QUEST_DATA "Quest/World2_02Race.def" 			*TEXT_LBL "LEVEL_INIT_WORLD2_02RACE"			*MULTIPLAYER "RACE"		 	*LEADERBOARD "CHALLENGE3"																								*ARCADE_POSITION 2  														*TRIAL_AVAILABLE 1}
+	{ *SHORT_NAME "SQUIGGLEVILLERACE"	*LEVEL_GROUP "CHALLENGE" 			*FILE_NAME "Levels/SquigglevilleRace.def"	*MUSIC "Musics/W3_Tricks.ogg" 					*QUEST_TYPE "QUEST_RACE" 		*QUEST_DATA "Quest/SquigglevilleRace.def" 		*TEXT_LBL "LEVEL_INIT_SQUIGGLEVILLERACE"		*MULTIPLAYER "RACE"			*LEADERBOARD "CHALLENGE5"				*UNLOCK_CONDITION "LEVEL"				*UNLOCK_DATA "SQUIGGLEVILLE"			*UNLOCK_TEXT "TEXT_LOCK_BEACH"					*ARCADE_POSITION 3 			*TRIAL_AVAILABLE 1}
+	{ *SHORT_NAME "RACEARCADE1"			*LEVEL_GROUP "CHALLENGE"		 	*FILE_NAME "Levels/RaceArcade1.def"			*MUSIC "Musics/W3_Tricks.ogg" 					*QUEST_TYPE "QUEST_RACE" 		*QUEST_DATA "Quest/RaceArcade1.def"				*TEXT_LBL "LEVEL_INIT_RACEARCADE1"				*MULTIPLAYER "RACE"		 	*LEADERBOARD "CHALLENGE2"										  														*ARCADE_POSITION 4 }
+	{ *SHORT_NAME "TUTORIALRACE"		*LEVEL_GROUP "CHALLENGE"		 	*FILE_NAME "Levels/TutorialRace.def"		*MUSIC "Musics/W3_Race.ogg" 					*QUEST_TYPE "QUEST_RACE" 		*QUEST_DATA "Quest/TutorialRace.def"			*TEXT_LBL "LEVEL_INIT_TUTORIALRACE"				*MULTIPLAYER "RACE"		 	*LEADERBOARD "CHALLENGE1"									   															*ARCADE_POSITION 5 }
+	{ *SHORT_NAME "WORLD1_02RACE"		*LEVEL_GROUP "CHALLENGE"			*FILE_NAME "Levels/World1_02Race.def"		*MUSIC "Musics/W3_Challenge_3.ogg" 				*QUEST_TYPE "QUEST_RACE" 		*QUEST_DATA "Quest/World1_02Race.def" 			*TEXT_LBL "LEVEL_INIT_WORLD1_02RACE"			*MULTIPLAYER "RACE" 		*LEADERBOARD "CHALLENGE4"										   														*ARCADE_POSITION 6 }	
+	{ *SHORT_NAME "ROOFTOPSRACE"		*LEVEL_GROUP "CHALLENGE"		 	*FILE_NAME "Levels/RoofTopsRace.def"		*MUSIC "Musics/W3_Race.ogg" 					*QUEST_TYPE "QUEST_RACE" 		*QUEST_DATA "Quest/RoofTopsRace.def" 			*TEXT_LBL "LEVEL_INIT_ROOFTOPSRACE"				*MULTIPLAYER "RACE"  		*LEADERBOARD "CHALLENGE6"				*UNLOCK_CONDITION "CHALLENGE_VISITED" 	*UNLOCK_DATA "ROOFTOPSRACE"  			*UNLOCK_TEXT "TEXT_LOCK_ROOFTOPSRACE"			*ARCADE_POSITION 7 }
+	{ *SHORT_NAME "SWAMPRACE"			*LEVEL_GROUP "CHALLENGE"			*FILE_NAME "Levels/SwampRace.def"			*MUSIC "Musics/W3_Challenge_3.ogg" 				*QUEST_TYPE "QUEST_RACE" 		*QUEST_DATA "Quest/SwampRace.def" 				*TEXT_LBL "LEVEL_INIT_SWAMPRACE" 				*MULTIPLAYER "RACE"			*LEADERBOARD "CHALLENGE7"				*UNLOCK_CONDITION "LEVEL" 				*UNLOCK_DATA "SWAMP"					*UNLOCK_TEXT "TEXT_LOCK_SWAMP"					*ARCADE_POSITION 8 }
+	{ *SHORT_NAME "BEACHRACE"			*LEVEL_GROUP "CHALLENGE"			*FILE_NAME "Levels/BeachRace.def"		 	*MUSIC "Musics/W3_Challenge_4.ogg" 				*QUEST_TYPE "QUEST_RACE" 		*QUEST_DATA "Quest/BeachRace.def" 				*TEXT_LBL "LEVEL_INIT_BEACHRACE"				*MULTIPLAYER "RACE"			*LEADERBOARD "CHALLENGE8"				*UNLOCK_CONDITION "LEVEL" 				*UNLOCK_DATA "BEACH"					*UNLOCK_TEXT "TEXT_LOCK_BEACH"					*ARCADE_POSITION 9 }	 	
+	{ *SHORT_NAME "MGTRAININGCOURSE"	*LEVEL_GROUP "CHALLENGE"			*FILE_NAME "Levels/MGTrainingCourse.def"	*MUSIC "Musics/W3_Race.ogg"			 			*QUEST_TYPE "QUEST_RACE" 		*QUEST_DATA "Quest/MGTrainingCourse.def" 		*TEXT_LBL "LEVEL_INIT_MGTRAININGCOURSE" 		*MULTIPLAYER "RACE"			*LEADERBOARD "CHALLENGE9"				*UNLOCK_CONDITION "CHALLENGE_VISITED" 	*UNLOCK_DATA "MGTRAININGCOURSE"			*UNLOCK_TEXT "TEXT_LOCK_MGTRAININGCOURSE"		*ARCADE_POSITION 10 }
+	{ *SHORT_NAME "FORGOTTENISLANDRACE"	*LEVEL_GROUP "CHALLENGE" 			*FILE_NAME "Levels/ForgottenIslandRace.def"	*MUSIC "Musics/W3_Race.ogg" 					*QUEST_TYPE "QUEST_RACE" 		*QUEST_DATA "Quest/ForgottenIslandRace.def"  	*TEXT_LBL "LEVEL_INIT_FORGOTTENISLANDRACE"		*MULTIPLAYER "RACE" 		*LEADERBOARD "CHALLENGE10"				*UNLOCK_CONDITION "CHALLENGE_VISITED" 	*UNLOCK_DATA "FORGOTTENISLANDRACE"		*UNLOCK_TEXT "TEXT_LOCK_FORGOTTENISLANDRACE"	*ARCADE_POSITION 11 }
+	
+	{ *SHORT_NAME "TUTORIAL"			*LEVEL_GROUP "TUTORIAL"		 		*FILE_NAME "Levels/Tutorial.def"			*MUSIC "Musics/FP_Tutorial.ogg" 				*QUEST_TYPE "QUEST_TUTORIAL" 	*QUEST_DATA "" 									*TEXT_LBL "LEVEL_INIT_TUTORIAL"						 						*TRIAL_AVAILABLE 1      }
+	{ *SHORT_NAME "TUTORIAL_FAKE"		*LEVEL_GROUP "TUTORIAL_FAKE" 		*FILE_NAME "Levels/TutorialFake.def"		*MUSIC "Musics/FP_Tutorial.ogg" 				*QUEST_TYPE "QUEST_TUTORIAL" 	*QUEST_DATA "" 									*TEXT_LBL "LEVEL_INIT_TUTORIAL"						 						*TRIAL_AVAILABLE 1      }
+	{ *SHORT_NAME "SQUIGGLEVILLE"		*LEVEL_GROUP "SQUIGGLEVILLE" 		*FILE_NAME "Levels/Squiggleville.def"		*MUSIC "Musics/W3_Squiggleville.ogg" 			*QUEST_TYPE "QUEST_NONE" 		*QUEST_DATA "" 									*TEXT_LBL "LEVEL_INIT_SQUIGGLEVILLE"										*TRIAL_AVAILABLE 1      }
+	{ *SHORT_NAME "HILLS"				*LEVEL_GROUP "SQUIGGLEVILLE"		*FILE_NAME "Levels/Hills.def"		 		*MUSIC "Musics/W3_Squiggleville.ogg"			*QUEST_TYPE "QUEST_NONE" 		*QUEST_DATA "" 									*TEXT_LBL "LEVEL_INIT_HILLS"						 						*TRIAL_AVAILABLE 1      }	
+	{ *SHORT_NAME "SCIENCE"				*LEVEL_GROUP "CHALLENGE" 			*FILE_NAME "Levels/Science.def"		 		*MUSIC "Musics/W3_Tricks.ogg" 					*QUEST_TYPE "QUEST_COMBO" 		*QUEST_DATA "Quest/Science.def" 				*TEXT_LBL "LEVEL_INIT_SCIENCE"					*MULTIPLAYER "COMBO"		*LEADERBOARD "CHALLENGE11"				*UNLOCK_CONDITION "CHALLENGE_VISITED" 	*UNLOCK_DATA "SCIENCE" 	*UNLOCK_TEXT "TEXT_LOCK_SCIENCE" 	 *TRIAL_AVAILABLE 1			*ARCADE_POSITION 1 }	
+	{ *SHORT_NAME "KINGINTRO"			*LEVEL_GROUP "SQUIGGLEVILLE"		*FILE_NAME "Levels/KingIntro.def"			*MUSIC "Musics/FP_Cinematic.ogg" 				*QUEST_TYPE "QUEST_NONE" 		*QUEST_DATA "" 									*TEXT_LBL "LEVEL_INIT_KINGINTRO"				*TRIAL_AVAILABLE 1      }
+	{ *SHORT_NAME "TOTHETUB"			*LEVEL_GROUP "SQUIGGLEVILLE" 		*FILE_NAME "Levels/ToTheTub.def"			*MUSIC "Musics/W3_Squiggleville.ogg" 			*QUEST_TYPE "QUEST_NONE" 		*QUEST_DATA "" 									*TEXT_LBL "LEVEL_INIT_TOTHETUB"					*TRIAL_AVAILABLE 1      }
+	{ *SHORT_NAME "PIRATETUBFIGHT"		*LEVEL_GROUP "SQUIGGLEVILLE" 		*FILE_NAME "Levels/PirateTubFight.def"		*MUSIC "Musics/W3_Boss_Fight.ogg" 				*QUEST_TYPE "QUEST_OPEN_DOOR" 	*QUEST_DATA "Quest/PirateTubFight.def" 			*TEXT_LBL "LEVEL_INIT_PIRATETUBFIGHT"			*TRIAL_AVAILABLE 1      }
+	{ *SHORT_NAME "CUTIEPANTSINTRO"		*LEVEL_GROUP "SQUIGGLEVILLE"		*FILE_NAME "Levels/CutiePantsIntro.def"		*MUSIC "Musics/FP_Cinematic.ogg" 				*QUEST_TYPE "QUEST_NONE" 		*QUEST_DATA "" 									*TEXT_LBL "LEVEL_INIT_CUTIEPANTSINTRO"			*TRIAL_AVAILABLE 1      }
+	{ *SHORT_NAME "OUTERSQUIGGLEVILLE"	*LEVEL_GROUP "OUTERSQUIGGLEVILLE" 	*FILE_NAME "Levels/OuterSquiggleville.def"	*MUSIC "Musics/W3_Outer_Squiggleville.ogg" 		*QUEST_TYPE "QUEST_NONE" 		*QUEST_DATA "" 									*TEXT_LBL "LEVEL_INIT_OUTERSQUIGGLEVILLE"}
+	{ *SHORT_NAME "FACTORY"				*LEVEL_GROUP "OUTERSQUIGGLEVILLE" 	*FILE_NAME "Levels/Factory.def"				*MUSIC "Musics/FP_Disco.ogg" 					*QUEST_TYPE "QUEST_NONE" 		*QUEST_DATA "" 									*TEXT_LBL "LEVEL_INIT_FACTORY"}
+	{ *SHORT_NAME "TOTHEFOREST"			*LEVEL_GROUP "OUTERSQUIGGLEVILLE" 	*FILE_NAME "Levels/ToTheForest.def"			*MUSIC "Musics/FP_HUB_Music.ogg" 				*QUEST_TYPE "QUEST_NONE" 		*QUEST_DATA "" 									*TEXT_LBL "LEVEL_INIT_TOTHEFOREST"}
+	{ *SHORT_NAME "FOREST"				*LEVEL_GROUP "FOREST" 				*FILE_NAME "Levels/Forest.def"				*MUSIC "Musics/W3_Forest.ogg" 					*QUEST_TYPE "QUEST_NONE" 		*QUEST_DATA "" 									*TEXT_LBL "LEVEL_INIT_FOREST"}
+	{ *SHORT_NAME "FORESTB"				*LEVEL_GROUP "FOREST" 				*FILE_NAME "Levels/ForestB.def"				*MUSIC "Musics/W3_Forest.ogg"	 				*QUEST_TYPE "QUEST_NONE" 		*QUEST_DATA "" 									*TEXT_LBL "LEVEL_INIT_FORESTB"}
+	{ *SHORT_NAME "WORLD1_05"			*LEVEL_GROUP "CHALLENGE"			*FILE_NAME "Levels/World1_05.def"			*MUSIC "Musics/W3_Challenge_4.ogg" 				*QUEST_TYPE "QUEST_COLLECT" 	*QUEST_DATA "Quest/World1_05.def" 				*TEXT_LBL "LEVEL_INIT_WORLD1_05"				*MULTIPLAYER "COLLECTION"	*LEADERBOARD "CHALLENGE12"				*UNLOCK_CONDITION "CHALLENGE_VISITED" 	*UNLOCK_DATA "WORLD1_05"	*UNLOCK_TEXT "TEXT_LOCK_WORLD1_05"}
+	{ *SHORT_NAME "TOTHESWAMP"			*LEVEL_GROUP "FOREST"			 	*FILE_NAME "Levels/ToTheSwamp.def"			*MUSIC "Musics/FP_HUB_Music.ogg" 				*QUEST_TYPE "QUEST_NONE" 		*QUEST_DATA "" 									*TEXT_LBL "LEVEL_INIT_TOTHESWAMP"}
+	{ *SHORT_NAME "SWAMP"				*LEVEL_GROUP "SWAMP" 				*FILE_NAME "Levels/Swamp.def"				*MUSIC "Musics/W3_Swamp.ogg" 					*QUEST_TYPE "QUEST_NONE" 		*QUEST_DATA "" 									*TEXT_LBL "LEVEL_INIT_SWAMP"}
+	{ *SHORT_NAME "SWAMPB"				*LEVEL_GROUP "SWAMP" 				*FILE_NAME "Levels/SwampB.def"				*MUSIC "Musics/W3_Swamp.ogg" 					*QUEST_TYPE "QUEST_NONE" 		*QUEST_DATA "" 									*TEXT_LBL "LEVEL_INIT_SWAMPB"}
+	{ *SHORT_NAME "SWAMPGOLF"			*LEVEL_GROUP "CHALLENGE"			*FILE_NAME "Levels/SwampGolf.def"			*MUSIC "Musics/W3_Challenge_3.ogg" 				*QUEST_TYPE "QUEST_GOLF" 		*QUEST_DATA "Quest/SwampGolf.def" 				*TEXT_LBL "LEVEL_INIT_SWAMPGOLF"				*MULTIPLAYER "GOLF"			*LEADERBOARD "CHALLENGE13"				*UNLOCK_CONDITION "CHALLENGE_VISITED" 	*UNLOCK_DATA "SWAMPGOLF"	*UNLOCK_TEXT "TEXT_LOCK_SWAMPGOLF"}
+	{ *SHORT_NAME "TOTHEBEACH"			*LEVEL_GROUP "SWAMP"				*FILE_NAME "Levels/ToTheBeach.def"		 	*MUSIC "Musics/FP_HUB_Music.ogg" 				*QUEST_TYPE "QUEST_NONE" 		*QUEST_DATA "" 									*TEXT_LBL "LEVEL_INIT_TOTHEBEACH"}
+	{ *SHORT_NAME "BEACH"				*LEVEL_GROUP "BEACH" 				*FILE_NAME "Levels/Beach.def"		 		*MUSIC "Musics/W3_Beach.ogg" 					*QUEST_TYPE "QUEST_NONE" 		*QUEST_DATA "" 									*TEXT_LBL "LEVEL_INIT_BEACH"}	 	
+	{ *SHORT_NAME "BEACHSANDCASTLES"	*LEVEL_GROUP "CHALLENGE" 			*FILE_NAME "Levels/BeachSandCastles.def"	*MUSIC "Musics/W3_Tricks.ogg" 				*QUEST_TYPE "QUEST_COLLECT" 	*QUEST_DATA "Quest/BeachSandCastles.def" 		*TEXT_LBL "LEVEL_INIT_BEACHSANDCASTLES"			*MULTIPLAYER "COLLECTION"	*LEADERBOARD "CHALLENGE14"				*UNLOCK_CONDITION "CHALLENGE_VISITED" 	*UNLOCK_DATA "BEACHSANDCASTLES"	*UNLOCK_TEXT "TEXT_LOCK_BEACHSANDCASTLES"}	 	
+	{ *SHORT_NAME "BEACHB"				*LEVEL_GROUP "BEACH" 				*FILE_NAME "Levels/BeachB.def"		 		*MUSIC "Musics/W3_Beach.ogg" 					*QUEST_TYPE "QUEST_NONE" 		*QUEST_DATA "" 									*TEXT_LBL "LEVEL_INIT_BEACHB"}	 	
+	{ *SHORT_NAME "BEACHOUTRO"			*LEVEL_GROUP "BEACH" 				*FILE_NAME "Levels/BeachOutro.def"		 	*MUSIC "Musics/FP_HUB_Music.ogg" 				*QUEST_TYPE "QUEST_NONE" 		*QUEST_DATA "" 									*TEXT_LBL "LEVEL_INIT_BEACHOUTRO"}	
+	{ *SHORT_NAME "UPTHEMOUNTAIN"		*LEVEL_GROUP "BEACH"		 		*FILE_NAME "Levels/Upthemountain.def"		*MUSIC "Musics/FP_Tutorial.ogg"			 		*QUEST_TYPE "QUEST_NONE" 		*QUEST_DATA "" 									*TEXT_LBL "LEVEL_INIT_UPTHEMOUNTAIN"}	
+	{ *SHORT_NAME "DOWNWARDCAVERNS"		*LEVEL_GROUP "DOWNWARDCAVERNS" 		*FILE_NAME "Levels/Downwardcaverns.def"		*MUSIC "Musics/W3_Downward&Upward_Caverns.ogg" 	*QUEST_TYPE "QUEST_NONE" 		*QUEST_DATA "" 									*TEXT_LBL "LEVEL_INIT_DOWNWARDCAVERNS"}
+	{ *SHORT_NAME "DOWNWARDCAVERNSB"	*LEVEL_GROUP "DOWNWARDCAVERNS" 		*FILE_NAME "Levels/DownwardcavernsB.def"	*MUSIC "Musics/W3_Downward&Upward_Caverns.ogg" 	*QUEST_TYPE "QUEST_NONE" 		*QUEST_DATA "" 									*TEXT_LBL "LEVEL_INIT_DOWNWARDCAVERNSB"}
+	{ *SHORT_NAME "DOWNWARDCAVERNSTRICKS" *LEVEL_GROUP "CHALLENGE" 			*FILE_NAME "Levels/DownwardcavernsTricks.def" *MUSIC "Musics/W3_Tricks.ogg" 				*QUEST_TYPE "QUEST_COMBO" 		*QUEST_DATA "Quest/DownwardCavernsTricks.def"	*TEXT_LBL "LEVEL_INIT_DOWNWARDCAVERNSTRICKS"	*MULTIPLAYER "COMBO"		*LEADERBOARD "CHALLENGE15"				*UNLOCK_CONDITION "CHALLENGE_VISITED" 	*UNLOCK_DATA "DOWNWARDCAVERNSTRICKS"	*UNLOCK_TEXT "TEXT_LOCK_DOWNWARDCAVERNSTRICKS"		*ARCADE_POSITION 2 }
+	{ *SHORT_NAME "UNDERGROUNDLAKE"		*LEVEL_GROUP "DOWNWARDCAVERNS" 		*FILE_NAME "Levels/Undergroundlake.def"		*MUSIC "Musics/FP_HUB_Music.ogg" 				*QUEST_TYPE "QUEST_NONE" 		*QUEST_DATA ""  								*TEXT_LBL "LEVEL_INIT_UNDERGROUNDLAKE"}
+	{ *SHORT_NAME "OUTSIDETHESHIP"		*LEVEL_GROUP "SUNKENSHIPTOWER" 		*FILE_NAME "Levels/Outsidetheship.def"		*MUSIC "Musics/W3_Downward&Upward_Caverns.ogg" 	*QUEST_TYPE "QUEST_NONE" 		*QUEST_DATA "" 									*TEXT_LBL "LEVEL_INIT_OUTSIDETHESHIP"}
+	{ *SHORT_NAME "SUNKENSHIPTOWER"		*LEVEL_GROUP "SUNKENSHIPTOWER" 		*FILE_NAME "Levels/Sunkenshiptower.def"		*MUSIC "Musics/W3_Sunken_Ship_Tower.ogg" 		*QUEST_TYPE "QUEST_NONE" 		*QUEST_DATA "" 									*TEXT_LBL "LEVEL_INIT_SUNKENSHIPTOWER"}
+	{ *SHORT_NAME "SUNKENSHIPTOWERB"	*LEVEL_GROUP "SUNKENSHIPTOWER" 		*FILE_NAME "Levels/SunkenshiptowerB.def"	*MUSIC "Musics/W3_Sunken_Ship_Tower.ogg" 		*QUEST_TYPE "QUEST_NONE" 		*QUEST_DATA "" 									*TEXT_LBL "LEVEL_INIT_SUNKENSHIPTOWERB"}
+	{ *SHORT_NAME "SUNKENSHIPTOWERGOLF"	*LEVEL_GROUP "CHALLENGE"			*FILE_NAME "Levels/SunkenshiptowerGolf.def"	*MUSIC "Musics/W3_Challenge_3.ogg" 				*QUEST_TYPE "QUEST_GOLF" 		*QUEST_DATA "Quest/SunkenshiptowerGolf.def" 	*TEXT_LBL "LEVEL_INIT_SUNKENSHIPTOWERGOLF"		*MULTIPLAYER "GOLF"			*LEADERBOARD "CHALLENGE16"				*UNLOCK_CONDITION "CHALLENGE_VISITED" 	*UNLOCK_DATA "SUNKENSHIPTOWERGOLF"		*UNLOCK_TEXT "TEXT_LOCK_SUNKENSHIPTOWERGOLF"}
+	{ *SHORT_NAME "PENCILCLOSET"		*LEVEL_GROUP "SUNKENSHIPTOWER" 		*FILE_NAME "Levels/Pencilcloset.def"		*MUSIC "Musics/Track05.ogg" 					*QUEST_TYPE "QUEST_NONE" 		*QUEST_DATA "" 									*TEXT_LBL "LEVEL_INIT_PENCILCLOSET"}
+	{ *SHORT_NAME "SHIPENTRANCE"		*LEVEL_GROUP "SUNKENSHIPTOWER" 		*FILE_NAME "Levels/Shipentrance.def"		*MUSIC "Musics/FP_Cinematic.ogg" 				*QUEST_TYPE "QUEST_BADDIE_TOWER" *QUEST_DATA ""  								*TEXT_LBL "LEVEL_INIT_SHIPENTRANCE"}
+	{ *SHORT_NAME "PIRATESHIP"			*LEVEL_GROUP "PIRATESHIP" 			*FILE_NAME "Levels/PirateShip.def"			*MUSIC "Musics/W3_Pirate_Ship.ogg" 				*QUEST_TYPE "QUEST_NONE" 		*QUEST_DATA ""									*TEXT_LBL "LEVEL_INIT_PIRATESHIP"}
+	{ *SHORT_NAME "SHIPROOM04"			*LEVEL_GROUP "PIRATESHIP" 			*FILE_NAME "Levels/ShipRoom04.def"			*MUSIC "" 										*QUEST_TYPE "QUEST_DISCO" 		*QUEST_DATA ""						  			*TEXT_LBL "LEVEL_INIT_PIRATEARENA00"}
+	{ *SHORT_NAME "PIRATEARENA00"		*LEVEL_GROUP "CHALLENGE" 			*FILE_NAME "Levels/PirateArena00.def"		*MUSIC "Musics/W3_Challenge_3.ogg" 				*QUEST_TYPE "QUEST_KILL_ENEMY" 	*QUEST_DATA "Quest/PirateArena00.def"  			*TEXT_LBL "LEVEL_INIT_PIRATEARENA00"}
+	{ *SHORT_NAME "PIRATEARENA01"		*LEVEL_GROUP "CHALLENGE" 			*FILE_NAME "Levels/PirateArena01.def"		*MUSIC "Musics/W3_Challenge_3.ogg" 				*QUEST_TYPE "QUEST_KILL_ENEMY" 	*QUEST_DATA "Quest/PirateArena01.def"  			*TEXT_LBL "LEVEL_INIT_PIRATEARENA01"}
+	{ *SHORT_NAME "PIRATEARENA02"		*LEVEL_GROUP "CHALLENGE" 			*FILE_NAME "Levels/PirateArena02.def"		*MUSIC "Musics/W3_Challenge_3.ogg" 				*QUEST_TYPE "QUEST_KILL_ENEMY" 	*QUEST_DATA "Quest/PirateArena02.def"  			*TEXT_LBL "LEVEL_INIT_PIRATEARENA02"}
+	{ *SHORT_NAME "PIRATEARENA03"		*LEVEL_GROUP "CHALLENGE" 			*FILE_NAME "Levels/PirateArena03.def"		*MUSIC "Musics/W3_Challenge_3.ogg" 				*QUEST_TYPE "QUEST_KILL_ENEMY" 	*QUEST_DATA "Quest/PirateArena03.def"  			*TEXT_LBL "LEVEL_INIT_PIRATEARENA03"}
+	{ *SHORT_NAME "PIRATEARENA04"		*LEVEL_GROUP "CHALLENGE" 			*FILE_NAME "Levels/PirateArena04.def"		*MUSIC "Musics/W3_Challenge_3.ogg" 				*QUEST_TYPE "QUEST_KILL_ENEMY" 	*QUEST_DATA "Quest/PirateArena04.def"  			*TEXT_LBL "LEVEL_INIT_PIRATEARENA04"}
+	{ *SHORT_NAME "PIRATEARENA05"		*LEVEL_GROUP "CHALLENGE" 			*FILE_NAME "Levels/PirateArena05.def"		*MUSIC "Musics/W3_Challenge_3.ogg" 				*QUEST_TYPE "QUEST_KILL_ENEMY" 	*QUEST_DATA "Quest/PirateArena05.def"  			*TEXT_LBL "LEVEL_INIT_PIRATEARENA05"}
+	{ *SHORT_NAME "PIRATEPRINCESS"		*LEVEL_GROUP "PIRATESHIP"		 	*FILE_NAME "Levels/PiratePrincess.def"		*MUSIC "Musics/W3_Boss_Fight.ogg" 				*QUEST_TYPE "QUEST_NONE" 		*QUEST_DATA "" 									*TEXT_LBL "LEVEL_INIT_PIRATEPRINCESS"}
+	{ *SHORT_NAME "SADCAPTAIN"			*LEVEL_GROUP "PIRATESHIP"		 	*FILE_NAME "Levels/SadCaptain.def"			*MUSIC "Musics/FP_Cinematic.ogg" 				*QUEST_TYPE "QUEST_NONE" 		*QUEST_DATA "" 									*TEXT_LBL "LEVEL_INIT_SADCAPTAIN"}
+	{ *SHORT_NAME "TOTHECAVERNS"		*LEVEL_GROUP "PIRATESHIP"		 	*FILE_NAME "Levels/ToTheCaverns.def"		*MUSIC "Musics/FP_HUB_Music.ogg" 				*QUEST_TYPE "QUEST_NONE" 		*QUEST_DATA "" 									*TEXT_LBL "LEVEL_INIT_TOTHECAVERNS"}
+	{ *SHORT_NAME "UPWARDCAVERNS"		*LEVEL_GROUP "UPWARDCAVERNS" 		*FILE_NAME "Levels/UpWardCaverns.def"		*MUSIC "Musics/W3_Downward&Upward_Caverns.ogg" 	*QUEST_TYPE "QUEST_NONE" 		*QUEST_DATA "" 									*TEXT_LBL "LEVEL_INIT_UPWARDCAVERNS"}
+	{ *SHORT_NAME "UPWARDCAVERNSB"		*LEVEL_GROUP "UPWARDCAVERNS" 		*FILE_NAME "Levels/UpWardCavernsB.def"		*MUSIC "Musics/W3_Downward&Upward_Caverns.ogg" 	*QUEST_TYPE "QUEST_NONE" 		*QUEST_DATA "" 									*TEXT_LBL "LEVEL_INIT_UPWARDCAVERNSB"}
+	{ *SHORT_NAME "UPWARDCAVERNSBATS"	*LEVEL_GROUP "CHALLENGE" 			*FILE_NAME "Levels/UpWardCavernsBats.def"	*MUSIC "Musics/W3_Tricks.ogg" 					*QUEST_TYPE "QUEST_COLLECT" 	*QUEST_DATA "Quest/UpWardCavernsBats.def"  		*TEXT_LBL "LEVEL_INIT_UPWARDCAVERNSBATS"		*MULTIPLAYER "COLLECTION"	*LEADERBOARD "CHALLENGE17"				*UNLOCK_CONDITION "CHALLENGE_VISITED" 	*UNLOCK_DATA "UPWARDCAVERNSBATS"		*UNLOCK_TEXT "TEXT_LOCK_UPWARDCAVERNSBATS"}
+	{ *SHORT_NAME "ISLANDSEXPRESSWAY"	*LEVEL_GROUP "UPWARDCAVERNS" 		*FILE_NAME "Levels/IslandsExpressway.def"	*MUSIC "Musics/FP_HUB_Music.ogg" 				*QUEST_TYPE "QUEST_NONE" 		*QUEST_DATA "" 									*TEXT_LBL "LEVEL_INIT_ISLANDSEXPRESSWAY"}
+	{ *SHORT_NAME "ISLANDINTRO"			*LEVEL_GROUP "FORGOTTENISLAND" 		*FILE_NAME "Levels/IslandIntro.def"			*MUSIC "Musics/W3_Forgotten_Island.ogg" 		*QUEST_TYPE "QUEST_NONE" 		*QUEST_DATA "" 									*TEXT_LBL "LEVEL_INIT_ISLANDINTRO"}
+	{ *SHORT_NAME "FORGOTTENISLAND"		*LEVEL_GROUP "FORGOTTENISLAND" 		*FILE_NAME "Levels/ForgottenIsland.def"		*MUSIC "Musics/W3_Forgotten_Island.ogg" 		*QUEST_TYPE "QUEST_NONE" 		*QUEST_DATA "" 									*TEXT_LBL "LEVEL_INIT_FORGOTTENISLAND"}
+	{ *SHORT_NAME "FORGOTTENISLANDB"	*LEVEL_GROUP "FORGOTTENISLAND" 		*FILE_NAME "Levels/ForgottenIslandB.def"	*MUSIC "Musics/W3_Forgotten_Island.ogg" 		*QUEST_TYPE "QUEST_NONE" 		*QUEST_DATA "" 									*TEXT_LBL "LEVEL_INIT_FORGOTTENISLANDB"}
+	{ *SHORT_NAME "ARENA_09"			*LEVEL_GROUP "FORGOTTENISLAND"		*FILE_NAME "Levels/Arena_09.def"			*MUSIC "Musics/W3_Beach.ogg" 					*QUEST_TYPE "QUEST_NONE" 		*QUEST_DATA ""					 				*TEXT_LBL "LEVEL_INIT_FORGOTTENISLANDOUTRO"}
+	{ *SHORT_NAME "NINJAINFESTATION"	*LEVEL_GROUP "NINJAINFESTATION"		*FILE_NAME "Levels/NinjaInfestation.def"	*MUSIC "Musics/W3_Pirate_Ship.ogg" 				*QUEST_TYPE "QUEST_NONE" 		*QUEST_DATA "" 									*TEXT_LBL "LEVEL_INIT_NINJAINFESTATION"}
+	{ *SHORT_NAME "PIRATEPRINCESSSMALL"	*LEVEL_GROUP "NINJAINFESTATION"		 *FILE_NAME "Levels/PiratePrincessSmall.def" *MUSIC "Musics/FP_Cinematic.ogg" 				*QUEST_TYPE "QUEST_OPEN_DOOR" 	*QUEST_DATA "Quest/PiratePrincessSmall.def"		*TEXT_LBL "LEVEL_INIT_PIRATEPRINCESS"}
+	{ *SHORT_NAME "CAPTAINSROOM"		*LEVEL_GROUP "NINJAINFESTATION"		*FILE_NAME "Levels/CaptainsRoom.def"		*MUSIC "Musics/W3_Boss_Fight.ogg" 				*QUEST_TYPE "QUEST_OPEN_DOOR" 	*QUEST_DATA "Quest/CaptainsRoom.def" 			*TEXT_LBL "LEVEL_INIT_CAPTAINSROOM"				*DEFAULT_LOAD_HINT 1}
+	{ *SHORT_NAME "ENDOFGAME"			*LEVEL_GROUP "ENDOFGAME"			*FILE_NAME "Levels/EndOfGame.def"			*MUSIC "Musics/FP_Cinematic.ogg" 				*QUEST_TYPE "QUEST_OPEN_DOOR" 	*QUEST_DATA "Quest/EndOfGame.def" 				*TEXT_LBL "LEVEL_INIT_CAPTAINSROOM"				*DEFAULT_LOAD_HINT 1}
+
+}
