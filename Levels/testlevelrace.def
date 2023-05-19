@@ -1,0 +1,85 @@
+*BINARY_FILE "Levels/TestLevelRace.lvl"
+*AMBIENT_COLOR_R 1.00000
+*AMBIENT_COLOR_G 1.00000
+*AMBIENT_COLOR_B 1.00000
+*BLOOM_COLOR_R 0.250000
+*BLOOM_COLOR_G 0.250000
+*BLOOM_COLOR_B 0.250000
+*HEAT_DISTORTION 0
+*CHECK_OUTSIDE 1
+*BACKGROUNDS
+{
+  {
+    *NAME "BACKGROUND1"
+    *BINARY_FILE "Levels/TestLevelRace_BACKGROUND1.bgd"
+    *POS_X 61.6547
+    *POS_Y -5.19807
+    *SIZE_X 26.9047
+    *SIZE_Y 8.49621
+    *Z 6.00000
+    *STATIC 1
+  }
+}
+*CAM_POINTS
+{
+}
+*MODELS
+{
+}
+*PARTICLE_SYSTEMS
+{
+}
+*ENTITIES
+{
+  {
+    *TYPE "FOCUS_ZONE" *NAME "FocusZone01" *POS { *X 6.08375 *Y -3.96026 }
+*FOCUS_SIZE_X 23.4890 *FOCUS_SIZE_Y 20.7741   }
+  {
+    *TYPE "FOCUS_ZONE" *NAME "FocusZone02" *POS { *X 18.1067 *Y -1.70893 }
+*FOCUS_SIZE_X 23.3457 *FOCUS_SIZE_Y 22.2296   }
+  {
+    *TYPE "RUBBER_POINT" *NAME "RubberPoint00" *POS { *X 19.8752 *Y -8.43152 }
+  }
+  {
+    *TYPE "RUBBER_POINT" *NAME "RubberPoint01" *POS { *X 21.7680 *Y -8.92461 }
+  }
+  {
+    *TYPE "RUBBER_POINT" *NAME "RubberPoint02" *POS { *X 23.4809 *Y -8.40825 }
+  }
+  {
+    *TYPE "COIN" *NAME "MultiPlayerCoin07" *POS { *X 23.5667 *Y -9.72087 }
+*MULTI 1   }
+  {
+    *TYPE "COIN" *NAME "MultiPlayerCoin02" *POS { *X 24.7412 *Y -9.73997 }
+*MULTI 1   }
+  {
+    *TYPE "COIN" *NAME "MultiPlayerCoin09" *POS { *X 25.7928 *Y -9.72087 }
+*MULTI 1   }
+  {
+    *TYPE "COIN" *NAME "MultiPlayerCoin03" *POS { *X 26.9102 *Y -9.73997 }
+*MULTI 1   }
+  {
+    *TYPE "COIN" *NAME "MultiPlayerCoin11" *POS { *X 28.2199 *Y -9.72087 }
+*MULTI 1   }
+  {
+    *TYPE "TRIGGER" *NAME "Trigger" *POS { *X 26.7942 *Y -9.08406 }
+*WIDTH 4.66354 *HEIGHT 2.65904     *TRIGGER_TYPE 1
+    *TARGET "SHELL"
+  }
+  {
+    *TYPE "JUMP_PAD" *NAME "JumpPad01" *POS { *X 5.93044 *Y -7.56658 }
+    *STRENGTH 12.0000
+  }
+  {
+    *TYPE "JUMP_PAD" *NAME "JumpPad02" *POS { *X 19.1406 *Y -7.56658 }
+    *STRENGTH 12.0000
+  }
+  {
+    *TYPE "CHECKPOINT" *NAME "Checkpoint01" *POS { *X 13.2239 *Y -7.53659 }
+*WIDTH 2.25342 *HEIGHT 5.44435     *RACE_START 1
+    *RACE_FINISH 1
+  }
+  {
+    *TYPE "CHECKPOINT" *NAME "Checkpoint02" *POS { *X 13.2014 *Y -1.90917 }
+*WIDTH 2.25342 *HEIGHT 4.39060   }
+}

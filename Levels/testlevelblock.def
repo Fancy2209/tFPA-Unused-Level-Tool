@@ -1,0 +1,89 @@
+*BINARY_FILE "Levels/TestLevelBlock.lvl"
+*AMBIENT_COLOR_R 1.00000
+*AMBIENT_COLOR_G 1.00000
+*AMBIENT_COLOR_B 1.00000
+*BLOOM_COLOR_R 0.250000
+*BLOOM_COLOR_G 0.250000
+*BLOOM_COLOR_B 0.250000
+*HEAT_DISTORTION 0
+*CHECK_OUTSIDE 1
+*BACKGROUNDS
+{
+}
+*CAM_POINTS
+{
+}
+*MODELS
+{
+}
+*PARTICLE_SYSTEMS
+{
+}
+*ENTITIES
+{
+  {
+    *TYPE "BBLOCK" *NAME "BBlock" *POS { *X -3.80845 *Y -0.708323 }
+  }
+  {
+    *TYPE "BBLOCK" *NAME "BBlock01" *POS { *X 3.75372 *Y -0.708323 }
+  }
+  {
+    *TYPE "BIG_COIN" *NAME "BigCoin" *POS { *X 5.16855 *Y 5.38416 }
+  }
+  {
+    *TYPE "BIG_COIN" *NAME "BigCoin01" *POS { *X 5.16566 *Y 4.50369 }
+  }
+  {
+    *TYPE "BIG_COIN" *NAME "BigCoin02" *POS { *X 5.16566 *Y 3.62428 }
+  }
+  {
+    *TYPE "BIG_COIN" *NAME "BigCoin03" *POS { *X 5.16566 *Y 2.66984 }
+  }
+  {
+    *TYPE "BIG_COIN" *NAME "BigCoin04" *POS { *X 5.16566 *Y 1.75462 }
+  }
+  {
+    *TYPE "BIG_COIN" *NAME "BigCoin05" *POS { *X 5.16566 *Y -0.148506 }
+  }
+  {
+    *TYPE "BIG_COIN" *NAME "BigCoin06" *POS { *X 5.16566 *Y 0.764397 }
+  }
+  {
+    *TYPE "BIG_COIN" *NAME "BigCoin07" *POS { *X 5.16566 *Y 1.75548 }
+  }
+  {
+    *TYPE "BIG_COIN" *NAME "BigCoin08" *POS { *X -5.21804 *Y 5.42153 }
+  }
+  {
+    *TYPE "BIG_COIN" *NAME "BigCoin09" *POS { *X -5.22093 *Y 4.54106 }
+  }
+  {
+    *TYPE "BIG_COIN" *NAME "BigCoin10" *POS { *X -5.22093 *Y 3.66166 }
+  }
+  {
+    *TYPE "BIG_COIN" *NAME "BigCoin11" *POS { *X -5.22093 *Y 2.70722 }
+  }
+  {
+    *TYPE "BIG_COIN" *NAME "BigCoin12" *POS { *X -5.22093 *Y 1.79199 }
+  }
+  {
+    *TYPE "BIG_COIN" *NAME "BigCoin13" *POS { *X -5.22093 *Y 0.801769 }
+  }
+  {
+    *TYPE "BIG_COIN" *NAME "BigCoin14" *POS { *X -5.22093 *Y -0.111133 }
+  }
+  {
+    *TYPE "DOOR" *NAME "Door" *POS { *X -5.82400 *Y 6.38621 }
+    *DST_LEVEL "HUB_WORLD3"
+  }
+  {
+    *TYPE "POWERUP" *NAME "PowerUp" *POS { *X -2.71943 *Y 2.26986 }
+    *ITEM "PENCIL"
+    *VANISH 1
+  }
+  {
+    *TYPE "POWERUP" *NAME "PowerUp01" *POS { *X 2.64783 *Y 2.26986 }
+    *ITEM "PENCIL"
+    *VANISH 1
+  }
+}
