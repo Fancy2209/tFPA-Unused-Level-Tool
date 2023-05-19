@@ -42,7 +42,7 @@ layout = [  [sg.Text('PAK File:'), sg.FileBrowse(key="PAK")],
             [sg.Button('Patch')] ]
 
 # Create the Window
-window = sg.Window('tFPA Toolbox', layout, size=(480, 320))
+window = sg.Window('tFPA Toolbox', layout, size=(300, 100))
 # Event Loop to process "events" and get the "values" of the inputs
 while True:
     event, values = window.read()
@@ -50,6 +50,7 @@ while True:
     level = values["level"]
     if event == 'Patch': # if user closes window or clicks cancel
         print(PAK, level, Levels)
+        system("quickbms.exe -w -r -r" + "nyxquest.bms" + PAK + level)
 
     if sg.WIN_CLOSED == True:
         break
