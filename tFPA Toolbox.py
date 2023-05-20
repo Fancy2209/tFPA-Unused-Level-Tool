@@ -2,6 +2,10 @@ import PySimpleGUI as sg
 from numpy import loadtxt
 import subprocess
 
+# Do this to not get error for no reason
+PAK = ''
+level = ''
+
 sg.theme('TanBlue')
 
 Levels = [
