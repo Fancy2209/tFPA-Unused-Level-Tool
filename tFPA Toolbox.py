@@ -50,7 +50,6 @@ while True:
     level = values["level"]
     if event == 'Patch': # if user closes window or clicks cancel
         subprocess.run(args=["quickbms.exe", "-w", "-r", "-r", "nyxquest.bms", PAK, "Levels/" + level], shell=True)
-
     if sg.WIN_CLOSED == True:
         break
 window.close()
