@@ -1,6 +1,6 @@
 import PySimpleGUI as sg
 from numpy import loadtxt
-from os import system
+import subprocess
 
 sg.theme('TanBlue')
 
@@ -49,7 +49,7 @@ while True:
     PAK = values["PAK"]
     level = values["level"]
     if event == 'Patch': # if user closes window or clicks cancel
-        system("quickbms.exe -w -r -r nyxquest.bms", PAK,  "Levels/" + level)
+        subprocess.run(["quickbms.exe -w -r -r nyxquest.bms", PAK,  "Levels/" + level])
 
     if sg.WIN_CLOSED == True:
         break
