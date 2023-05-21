@@ -5,7 +5,7 @@
 ### How to Use
 
 1. Extract the Xbox 360 game with [WxPirs](https://digiex.net/attachments/wxpirs-1-1-rar.7438/)
-2. Install Python (**Make sure to check the "Add to Path" and "Install Python Launcher" options while installing**)
+2. Install Python (**Make sure to check the "Add to Path" option while installing**)
 3. Open a cmd and type ``pip install pysimplegui numpy``
 4. Download the Repository and extract it somewhere
 5. Download [QuickBMS](https://aluigi.altervista.org/papers/quickbms.zip) and [Nyxquest.bms](https://aluigi.altervista.org/bms/nyxquest.bms) and place the bms file and quickbms.exe from the zip on the repository
