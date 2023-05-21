@@ -1,0 +1,161 @@
+*BINARY_FILE "Levels/RobArea5.lvl"
+*BLOOM_COLOR_R 0.250000
+*BLOOM_COLOR_G 0.250000
+*BLOOM_COLOR_B 0.250000
+*HEAT_DISTORTION 0
+*BACKGROUNDS
+{
+  {
+    *NAME "BACKGROUND01"
+    *BINARY_FILE "Levels/ForgottenIslandOutro_BACKGROUND01.bgd"
+    *POS_X -9.53674e-007
+    *POS_Y 0.000000
+    *SIZE_X 48.6250
+    *SIZE_Y 18.1875
+    *Z -1.41254
+  }
+}
+*CAM_POINTS
+{
+}
+*MODELS
+{
+}
+*PARTICLE_SYSTEMS
+{
+}
+*ENTITIES
+{
+  {
+    *TYPE "DOOR" *NAME "Door01" *POS { *X 18.3784 *Y 5.55541 }
+    *DST_LEVEL "WORLD1_03"
+    *DST_DOOR "Door02"
+  }
+  {
+    *TYPE "COIN" *NAME "Coin319" *POS { *X 21.7136 *Y -5.06425 }
+  }
+  {
+    *TYPE "COIN" *NAME "Coin320" *POS { *X 20.9273 *Y -5.06425 }
+  }
+  {
+    *TYPE "BIG_COIN" *NAME "BigCoin08" *POS { *X 24.4723 *Y -5.23541 }
+  }
+  {
+    *TYPE "BIG_COIN" *NAME "BigCoin14" *POS { *X 25.1822 *Y -5.23541 }
+  }
+  {
+    *TYPE "BIG_COIN" *NAME "BigCoin15" *POS { *X 24.8554 *Y -4.55959 }
+  }
+  {
+    *TYPE "JUMP_PAD" *NAME "JumpPad07" *POS { *X 1.44236 *Y -0.631674 }
+    *STRENGTH 14.0000
+  }
+  {
+    *TYPE "COIN" *NAME "Coin323" *POS { *X 4.05090 *Y 0.950787 }
+  }
+  {
+    *TYPE "BIG_COIN" *NAME "BigCoin20" *POS { *X 5.36390 *Y 7.34954 }
+  }
+  {
+    *TYPE "JUMP_PAD" *NAME "JumpPad08" *POS { *X 4.04693 *Y -0.631674 }
+    *STRENGTH 12.0000
+  }
+  {
+    *TYPE "JUMP_PAD" *NAME "JumpPad09" *POS { *X 6.61509 *Y -0.631674 }
+    *STRENGTH 14.0000
+  }
+  {
+    *TYPE "JUMP_PAD" *NAME "JumpPad10" *POS { *X 9.15097 *Y -0.631674 }
+    *STRENGTH 12.0000
+  }
+  {
+    *TYPE "JUMP_PAD" *NAME "JumpPad11" *POS { *X 11.7465 *Y -0.631674 }
+    *STRENGTH 14.0000
+  }
+  {
+    *TYPE "JUMP_PAD" *NAME "JumpPad12" *POS { *X 14.3030 *Y -0.631674 }
+    *STRENGTH 11.0000
+  }
+  {
+    *TYPE "JUMP_PAD" *NAME "JumpPad13" *POS { *X 16.8404 *Y -0.631674 }
+    *STRENGTH 12.0000
+  }
+  {
+    *TYPE "BIG_COIN" *NAME "BigCoin21" *POS { *X 10.4020 *Y 7.34954 }
+  }
+  {
+    *TYPE "BIG_COIN" *NAME "BigCoin22" *POS { *X 7.81412 *Y 10.2779 }
+  }
+  {
+    *TYPE "BIG_COIN" *NAME "BigCoin23" *POS { *X 12.9058 *Y 10.2779 }
+  }
+  {
+    *TYPE "COIN" *NAME "Coin324" *POS { *X 4.05090 *Y 2.11819 }
+  }
+  {
+    *TYPE "COIN" *NAME "Coin325" *POS { *X 4.05090 *Y 4.52109 }
+  }
+  {
+    *TYPE "COIN" *NAME "Coin326" *POS { *X 4.05090 *Y 3.35369 }
+  }
+  {
+    *TYPE "COIN" *NAME "Coin327" *POS { *X 6.55003 *Y 4.52109 }
+  }
+  {
+    *TYPE "COIN" *NAME "Coin328" *POS { *X 6.55003 *Y 3.35369 }
+  }
+  {
+    *TYPE "COIN" *NAME "Coin329" *POS { *X 6.55003 *Y 2.11819 }
+  }
+  {
+    *TYPE "COIN" *NAME "Coin330" *POS { *X 6.55003 *Y 0.950787 }
+  }
+  {
+    *TYPE "COIN" *NAME "Coin331" *POS { *X 9.13845 *Y 4.52109 }
+  }
+  {
+    *TYPE "COIN" *NAME "Coin332" *POS { *X 9.13845 *Y 3.35369 }
+  }
+  {
+    *TYPE "COIN" *NAME "Coin333" *POS { *X 9.13845 *Y 2.11819 }
+  }
+  {
+    *TYPE "COIN" *NAME "Coin334" *POS { *X 9.13845 *Y 0.950787 }
+  }
+  {
+    *TYPE "COIN" *NAME "Coin335" *POS { *X 11.6329 *Y 4.52109 }
+  }
+  {
+    *TYPE "COIN" *NAME "Coin336" *POS { *X 11.6329 *Y 3.35369 }
+  }
+  {
+    *TYPE "COIN" *NAME "Coin337" *POS { *X 11.6329 *Y 2.11819 }
+  }
+  {
+    *TYPE "COIN" *NAME "Coin338" *POS { *X 11.6329 *Y 0.950787 }
+  }
+  {
+    *TYPE "COIN" *NAME "Coin339" *POS { *X 14.3342 *Y 4.52109 }
+  }
+  {
+    *TYPE "COIN" *NAME "Coin340" *POS { *X 14.3342 *Y 3.35369 }
+  }
+  {
+    *TYPE "COIN" *NAME "Coin341" *POS { *X 14.3342 *Y 2.11819 }
+  }
+  {
+    *TYPE "COIN" *NAME "Coin342" *POS { *X 14.3342 *Y 0.950787 }
+  }
+  {
+    *TYPE "COIN" *NAME "Coin343" *POS { *X 16.8727 *Y 4.52109 }
+  }
+  {
+    *TYPE "COIN" *NAME "Coin344" *POS { *X 16.8727 *Y 3.35369 }
+  }
+  {
+    *TYPE "COIN" *NAME "Coin345" *POS { *X 16.8727 *Y 2.11819 }
+  }
+  {
+    *TYPE "COIN" *NAME "Coin346" *POS { *X 16.8727 *Y 0.950787 }
+  }
+}

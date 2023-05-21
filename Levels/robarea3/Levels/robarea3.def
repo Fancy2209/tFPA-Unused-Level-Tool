@@ -1,0 +1,355 @@
+*BINARY_FILE "Levels/RobArea3.lvl"
+*BLOOM_COLOR_R 0.250000
+*BLOOM_COLOR_G 0.250000
+*BLOOM_COLOR_B 0.250000
+*HEAT_DISTORTION 0
+*BACKGROUNDS
+{
+  {
+    *NAME "BACKGROUND01"
+    *BINARY_FILE "Levels/ForgottenIslandOutro_BACKGROUND01.bgd"
+    *POS_X -9.53674e-007
+    *POS_Y 0.000000
+    *SIZE_X 48.6250
+    *SIZE_Y 18.1875
+    *Z -1.41254
+  }
+}
+*CAM_POINTS
+{
+}
+*MODELS
+{
+}
+*PARTICLE_SYSTEMS
+{
+}
+*ENTITIES
+{
+  {
+    *TYPE "DOOR" *NAME "Door01" *POS { *X 18.8714 *Y 26.6945 }
+    *DST_LEVEL "WORLD1_03"
+    *DST_DOOR "Door02"
+  }
+  {
+    *TYPE "BIG_COIN" *NAME "BigCoin01" *POS { *X 9.18843 *Y 24.0383 }
+  }
+  {
+    *TYPE "COIN" *NAME "Coin290" *POS { *X 1.46540 *Y -0.335664 }
+  }
+  {
+    *TYPE "CIRCLE_PLATFORM" *NAME "PlatformCircle01" *POS { *X -1.93466 *Y 4.38762 }
+    *LAYER "GROUND"
+    *RADIUS 4.00000
+    *MOVIL
+    {
+      *ROT_SPEED 50.0000
+      *FPS 30.0000       *TARGETS
+      {
+        {           *FRAME 0           *TIME 0.000000           *X -1.93466           *Y 4.38762         }
+      }
+    }
+  }
+  {
+    *TYPE "CIRCLE_PLATFORM" *NAME "PlatformCircle26" *POS { *X 4.36124 *Y 3.84541 }
+    *LAYER "GROUND"
+    *RADIUS 1.50000
+    *MOVIL
+    {
+      *ROT_SPEED -70.0000
+      *FPS 30.0000       *TARGETS
+      {
+        {           *FRAME 0           *TIME 0.000000           *X 4.36124           *Y 3.84541         }
+      }
+    }
+  }
+  {
+    *TYPE "CIRCLE_PLATFORM" *NAME "PlatformCircle27" *POS { *X 7.57182 *Y 3.90510 }
+    *LAYER "GROUND"
+    *RADIUS 1.10000
+    *MOVIL
+    {
+      *ROT_SPEED 40.0000
+      *FPS 30.0000       *TARGETS
+      {
+        {           *FRAME 0           *TIME 0.000000           *X 7.57182           *Y 3.90510         }
+      }
+    }
+  }
+  {
+    *TYPE "CIRCLE_PLATFORM" *NAME "PlatformCircle28" *POS { *X 10.7366 *Y 3.90510 }
+    *LAYER "GROUND"
+    *RADIUS 1.10000
+    *MOVIL
+    {
+      *ROT_SPEED 40.0000
+      *FPS 30.0000       *TARGETS
+      {
+        {           *FRAME 0           *TIME 0.000000           *X 10.7366           *Y 3.90510         }
+      }
+    }
+  }
+  {
+    *TYPE "CIRCLE_PLATFORM" *NAME "PlatformCircle29" *POS { *X 13.8069 *Y 3.90510 }
+    *LAYER "GROUND"
+    *RADIUS 1.10000
+    *MOVIL
+    {
+      *ROT_SPEED 40.0000
+      *FPS 30.0000       *TARGETS
+      {
+        {           *FRAME 0           *TIME 0.000000           *X 13.8069           *Y 3.90510         }
+      }
+    }
+  }
+  {
+    *TYPE "CIRCLE_PLATFORM" *NAME "PlatformCircle30" *POS { *X 21.0191 *Y -0.941322 }
+    *LAYER "GROUND"
+    *RADIUS 4.00000
+    *MOVIL
+    {
+      *ROT_SPEED -40.0000
+      *FPS 30.0000       *TARGETS
+      {
+        {           *FRAME 0           *TIME 0.000000           *X 21.0191           *Y -0.941322         }
+      }
+    }
+  }
+  {
+    *TYPE "JUMP_PAD" *NAME "JumpPad02" *POS { *X 11.3873 *Y 23.4778 }
+    *STRENGTH 11.0000
+  }
+  {
+    *TYPE "CIRCLE_PLATFORM" *NAME "PlatformCircle31" *POS { *X 10.3449 *Y -4.39956 }
+    *LAYER "GROUND"
+    *RADIUS 5.00000
+    *MOVIL
+    {
+      *ROT_SPEED -40.0000
+      *FPS 30.0000       *TARGETS
+      {
+        {           *FRAME 0           *TIME 0.000000           *X 10.3449           *Y -4.39956         }
+      }
+    }
+  }
+  {
+    *TYPE "CIRCLE_PLATFORM" *NAME "PlatformCircle32" *POS { *X 18.0510 *Y 12.2989 }
+    *LAYER "GROUND"
+    *RADIUS 1.10000
+    *MOVIL
+    {
+      *ROT_SPEED 40.0000
+      *FPS 30.0000       *TARGETS
+      {
+        {           *FRAME 0           *TIME 0.000000           *X 18.0510           *Y 12.2989         }
+      }
+    }
+  }
+  {
+    *TYPE "CIRCLE_PLATFORM" *NAME "PlatformCircle33" *POS { *X 14.6099 *Y 13.1725 }
+    *LAYER "GROUND"
+    *RADIUS 1.10000
+    *MOVIL
+    {
+      *ROT_SPEED 40.0000
+      *FPS 30.0000       *TARGETS
+      {
+        {           *FRAME 0           *TIME 0.000000           *X 14.6099           *Y 13.1725         }
+      }
+    }
+  }
+  {
+    *TYPE "CIRCLE_PLATFORM" *NAME "PlatformCircle34" *POS { *X 11.0346 *Y 14.0908 }
+    *LAYER "GROUND"
+    *RADIUS 1.10000
+    *MOVIL
+    {
+      *ROT_SPEED 40.0000
+      *FPS 30.0000       *TARGETS
+      {
+        {           *FRAME 0           *TIME 0.000000           *X 11.0346           *Y 14.0908         }
+      }
+    }
+  }
+  {
+    *TYPE "CIRCLE_PLATFORM" *NAME "PlatformCircle35" *POS { *X 14.0101 *Y 16.7478 }
+    *LAYER "GROUND"
+    *RADIUS 1.10000
+    *MOVIL
+    {
+      *ROT_SPEED -60.0000
+      *FPS 30.0000       *TARGETS
+      {
+        {           *FRAME 0           *TIME 0.000000           *X 14.0101           *Y 16.7478         }
+      }
+    }
+  }
+  {
+    *TYPE "COIN" *NAME "Coin291" *POS { *X 1.65235 *Y 9.50493 }
+  }
+  {
+    *TYPE "COIN" *NAME "Coin292" *POS { *X 2.66668 *Y 9.50493 }
+  }
+  {
+    *TYPE "COIN" *NAME "Coin293" *POS { *X 4.73365 *Y 9.50493 }
+  }
+  {
+    *TYPE "COIN" *NAME "Coin294" *POS { *X 3.71933 *Y 9.50493 }
+  }
+  {
+    *TYPE "COIN" *NAME "Coin295" *POS { *X 7.75020 *Y 11.0673 }
+  }
+  {
+    *TYPE "COIN" *NAME "Coin296" *POS { *X 6.73587 *Y 11.0673 }
+  }
+  {
+    *TYPE "COIN" *NAME "Coin297" *POS { *X 8.80285 *Y 9.50493 }
+  }
+  {
+    *TYPE "COIN" *NAME "Coin298" *POS { *X 9.81717 *Y 9.50493 }
+  }
+  {
+    *TYPE "COIN" *NAME "Coin299" *POS { *X 11.9607 *Y 11.0215 }
+  }
+  {
+    *TYPE "COIN" *NAME "Coin300" *POS { *X 14.0277 *Y 9.50493 }
+  }
+  {
+    *TYPE "COIN" *NAME "Coin301" *POS { *X 13.0133 *Y 9.50493 }
+  }
+  {
+    *TYPE "COIN" *NAME "Coin302" *POS { *X 16.2245 *Y 11.0215 }
+  }
+  {
+    *TYPE "COIN" *NAME "Coin303" *POS { *X 15.2102 *Y 11.0215 }
+  }
+  {
+    *TYPE "COIN" *NAME "Coin304" *POS { *X 17.2772 *Y 9.50493 }
+  }
+  {
+    *TYPE "COIN" *NAME "Coin305" *POS { *X 18.2915 *Y 9.50493 }
+  }
+  {
+    *TYPE "COIN" *NAME "Coin306" *POS { *X 10.9464 *Y 11.0215 }
+  }
+  {
+    *TYPE "COIN" *NAME "Coin307" *POS { *X 3.46412 *Y 20.7277 }
+  }
+  {
+    *TYPE "COIN" *NAME "Coin308" *POS { *X 2.44979 *Y 20.7277 }
+  }
+  {
+    *TYPE "COIN" *NAME "Coin311" *POS { *X 3.66753 *Y 23.8974 }
+  }
+  {
+    *TYPE "COIN" *NAME "Coin312" *POS { *X 2.65321 *Y 23.8974 }
+  }
+  {
+    *TYPE "CIRCLE_PLATFORM" *NAME "PlatformCircle36" *POS { *X 7.31792 *Y 15.0970 }
+    *LAYER "GROUND"
+    *RADIUS 1.10000
+    *MOVIL
+    {
+      *ROT_SPEED 40.0000
+      *FPS 30.0000       *TARGETS
+      {
+        {           *FRAME 0           *TIME 0.000000           *X 7.31792           *Y 15.0970         }
+      }
+    }
+  }
+  {
+    *TYPE "CIRCLE_PLATFORM" *NAME "PlatformCircle37" *POS { *X 17.5710 *Y 18.1048 }
+    *LAYER "GROUND"
+    *RADIUS 1.10000
+    *MOVIL
+    {
+      *ROT_SPEED 80.0000
+      *FPS 30.0000       *TARGETS
+      {
+        {           *FRAME 0           *TIME 0.000000           *X 17.5710           *Y 18.1048         }
+      }
+    }
+  }
+  {
+    *TYPE "CIRCLE_PLATFORM" *NAME "PlatformCircle38" *POS { *X 14.6205 *Y 20.2323 }
+    *LAYER "GROUND"
+    *RADIUS 1.10000
+    *MOVIL
+    {
+      *ROT_SPEED -80.0000
+      *FPS 30.0000       *TARGETS
+      {
+        {           *FRAME 0           *TIME 0.000000           *X 14.6205           *Y 20.2323         }
+      }
+    }
+  }
+  {
+    *TYPE "COIN" *NAME "Coin313" *POS { *X 4.75635 *Y 23.8974 }
+  }
+  {
+    *TYPE "COIN" *NAME "Coin314" *POS { *X 5.77067 *Y 23.8974 }
+  }
+  {
+    *TYPE "COIN" *NAME "Coin315" *POS { *X 0.584666 *Y 23.8974 }
+  }
+  {
+    *TYPE "COIN" *NAME "Coin316" *POS { *X 1.59899 *Y 23.8974 }
+  }
+  {
+    *TYPE "COIN" *NAME "Coin317" *POS { *X 2.25240 *Y -0.335664 }
+  }
+  {
+    *TYPE "COIN" *NAME "Coin318" *POS { *X 3.03868 *Y -0.335664 }
+  }
+  {
+    *TYPE "COIN" *NAME "Coin319" *POS { *X 15.8209 *Y 1.32654 }
+  }
+  {
+    *TYPE "COIN" *NAME "Coin320" *POS { *X 15.0347 *Y 1.32654 }
+  }
+  {
+    *TYPE "BIG_COIN" *NAME "BigCoin02" *POS { *X 13.8006 *Y 6.62102 }
+  }
+  {
+    *TYPE "BIG_COIN" *NAME "BigCoin03" *POS { *X 10.8218 *Y 6.62102 }
+  }
+  {
+    *TYPE "BIG_COIN" *NAME "BigCoin04" *POS { *X 7.57088 *Y 6.62102 }
+  }
+  {
+    *TYPE "BIG_COIN" *NAME "BigCoin05" *POS { *X 16.6378 *Y 15.0561 }
+  }
+  {
+    *TYPE "BIG_COIN" *NAME "BigCoin06" *POS { *X 14.0206 *Y 18.6285 }
+  }
+  {
+    *TYPE "BIG_COIN" *NAME "BigCoin07" *POS { *X 7.42233 *Y 17.1099 }
+  }
+  {
+    *TYPE "BIG_COIN" *NAME "BigCoin08" *POS { *X 17.2866 *Y 19.8288 }
+  }
+  {
+    *TYPE "BIG_COIN" *NAME "BigCoin09" *POS { *X 14.6531 *Y 21.9742 }
+  }
+  {
+    *TYPE "BIG_COIN" *NAME "BigCoin10" *POS { *X 10.0296 *Y 24.0383 }
+  }
+  {
+    *TYPE "BIG_COIN" *NAME "BigCoin11" *POS { *X 9.63972 *Y 24.6839 }
+  }
+  {
+    *TYPE "BIG_COIN" *NAME "BigCoin12" *POS { *X 14.8782 *Y 27.1093 }
+  }
+  {
+    *TYPE "BIG_COIN" *NAME "BigCoin14" *POS { *X 17.9965 *Y 19.8288 }
+  }
+  {
+    *TYPE "BIG_COIN" *NAME "BigCoin15" *POS { *X 17.6697 *Y 20.5046 }
+  }
+  {
+    *TYPE "COIN" *NAME "Coin321" *POS { *X 14.2621 *Y 27.0989 }
+  }
+  {
+    *TYPE "COIN" *NAME "Coin322" *POS { *X 15.4901 *Y 27.0989 }
+  }
+}
