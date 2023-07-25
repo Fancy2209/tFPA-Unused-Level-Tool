@@ -8,6 +8,7 @@ level = ''
 sg.theme('TanBlue')
 
 Levels = [
+       'Kabootle Mod',
        'arena01',
        'arena02',
        'arena04',
