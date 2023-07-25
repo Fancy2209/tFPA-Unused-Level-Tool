@@ -1,0 +1,433 @@
+*BINARY_FILE "Levels/HubWorld3.lvl"
+*AMBIENT_COLOR_R 1.00000
+*AMBIENT_COLOR_G 1.00000
+*AMBIENT_COLOR_B 1.00000
+*BLOOM_COLOR_R 0.250000
+*BLOOM_COLOR_G 0.250000
+*BLOOM_COLOR_B 0.250000
+*HEAT_DISTORTION 0
+*CHECK_OUTSIDE 1
+*ENTITY_ALWAYS_UPDATE 0
+*MIN_CAMERA_LENGTH 10.0000
+*BACKGROUNDS
+{
+  {
+    *NAME "BACKGROUND01"
+    *BINARY_FILE "Levels/HubWorld3_BACKGROUND01.bgd"
+    *POS_X 0.000642776
+    *POS_Y 0.792423
+    *SIZE_X 24.2180
+    *SIZE_Y 14.0600
+    *Z 1.41630
+  }
+  {
+    *NAME "BACKGROUND02"
+    *BINARY_FILE "Levels/HubWorld3_BACKGROUND02.bgd"
+    *POS_X 0.000642776
+    *POS_Y 0.792423
+    *SIZE_X 24.2180
+    *SIZE_Y 14.0600
+    *Z 0.433239
+  }
+  {
+    *NAME "BACKGROUND03"
+    *BINARY_FILE "Levels/HubWorld3_BACKGROUND03.bgd"
+    *POS_X 0.00148392
+    *POS_Y 0.792423
+    *SIZE_X 24.2180
+    *SIZE_Y 14.0600
+    *Z 2.19340
+  }
+  {
+    *NAME "BACKGROUND04"
+    *BINARY_FILE "Levels/HubWorld3_BACKGROUND04.bgd"
+    *POS_X -0.429359
+    *POS_Y 0.792423
+    *SIZE_X 20.5600
+    *SIZE_Y 14.0600
+    *Z 4.09985
+  }
+  {
+    *NAME "BACKGROUND05"
+    *BINARY_FILE "Levels/HubWorld3_BACKGROUND05.bgd"
+    *POS_X -0.429359
+    *POS_Y 0.792423
+    *SIZE_X 20.5600
+    *SIZE_Y 14.0600
+    *Z 5.16528
+  }
+  {
+    *NAME "BACKGROUND06"
+    *BINARY_FILE "Levels/HubWorld3_BACKGROUND06.bgd"
+    *POS_X -0.429359
+    *POS_Y 0.792423
+    *SIZE_X 20.5600
+    *SIZE_Y 14.0600
+    *Z 6.07959
+  }
+  {
+    *NAME "BACKGROUND08"
+    *BINARY_FILE "Levels/HubWorld3_BACKGROUND08.bgd"
+    *POS_X 0.000642776
+    *POS_Y 0.00242281
+    *SIZE_X 24.2180
+    *SIZE_Y 15.6400
+    *Z -0.439880
+  }
+}
+*CAM_POINTS
+{
+}
+*MODELS
+{
+}
+*PARTICLE_SYSTEMS
+{
+}
+*ENTITIES
+{
+  {
+    *TYPE "DOOR" *NAME "Door05" *POS { *X -4.36636 *Y 4.08437 }
+    *DST_LEVEL "TEST"
+    *DST_DOOR "Door01"
+    *IND_TEXT "Test Level"
+  }
+  {
+    *TYPE "DOOR" *NAME "Door04" *POS { *X -1.35582 *Y 4.08437 }
+    *DST_LEVEL "HUBWORLD3BEDROOM"
+    *DST_DOOR "Door01"
+    *IND_TEXT "DOOR_BEDROOM"
+  }
+  {
+    *TYPE "DOOR" *NAME "Door01" *POS { *X 8.67143 *Y -0.469693 }
+    *DST_LEVEL "HUBWORLD3SELECTLEVEL"
+    *DST_DOOR "Door01"
+    *IND_TEXT "DOOR_LEVEL_SELECT"
+    *HUB_DOOR 1
+  }
+  {
+    *TYPE "ZONE_DOOR" *NAME "ZoneDoor00" *POS { *X 18.1933 *Y -0.358836 }
+    *DST_LEVEL "SQUIGGLEVILLE"
+    *DST_DOOR "Door01"
+    *PROGRESS 1
+    *WORLD "WORLD_3"
+*WIDTH 6.45512 *HEIGHT 10.1246   }
+  {
+    *TYPE "POWERUP" *NAME "PowerUp" *POS { *X 0.0166702 *Y -0.570155 }
+*ROT 000.000     *ITEM "HOOK"
+  }
+  {
+    *TYPE "POWERUP" *NAME "PowerUp" *POS { *X 1.68544 *Y -0.570155 }
+*ROT 000.000     *ITEM "PENCIL"
+  }
+  {
+    *TYPE "DECO_TEXT" *NAME "DecoText" *POS { *X 1.03492 *Y 2.26733 }
+    *TEXT "Powerups"
+    *TRANSLATE 1
+*Z -3.91535e-008 *WIDTH 1.42114 *HEIGHT 1.44722     *MOVIL
+    {
+      *FPS 30.0000       *MODE 1       *TARGETS
+      {
+        {           *FRAME 0           *TIME 0.000000           *X 1.03492           *Y 2.26733         }
+      }
+    }
+  }
+  {
+    *TYPE "DECO_TEXT" *NAME "DecoText01" *POS { *X 13.1167 *Y 0.599177 }
+    *TEXT "TEXT_START"
+    *TEXT_CONDITION "TEXT_CONTINUE"
+    *TRANSLATE 1
+    *CHECK_CONDITION 1
+    *LOCK_COND_TYPE "CONTINUE_WORLD"
+    *LOCK_COND_DATA "WORLD_3"
+    *COLOR_R 0.179688
+    *COLOR_G 0.156250
+    *COLOR_B 0.0976563
+*Z -3.04072e-008 *WIDTH 1.32925 *HEIGHT 0.356777     *RESIZE_X 1
+    *RESIZE_Y 1
+    *MOVIL
+    {
+      *FPS 30.0000       *MODE 1       *TARGETS
+      {
+        {           *FRAME 0           *TIME 0.000000           *X 13.1167           *Y 0.599177         }
+      }
+    }
+  }
+  {
+    *TYPE "DOOR" *NAME "Door10" *POS { *X 2.49009 *Y 7.88816 }
+    *VISIBLE 0
+    *USABLE 0
+  }
+  {
+    *TYPE "DECO_ELEMENT" *NAME "DecoElement89" *POS { *X -14.4154 *Y 8.87794 }
+*SCALE { *X 0.608961 *Y 0.608961 }
+*Z 5.12090     *COLOR_R 0.796875
+    *COLOR_G 0.859375
+    *COLOR_B 0.871094
+    *SPRITE_ANIM "SpriteAnimGraphs/Pajaro.sag"
+    *MOVIL
+    {
+      *FPS 30.0000       *MODE 1       *TARGETS
+      {
+        {           *FRAME 0           *TIME 0.000000           *X -14.4154           *Y 8.87794           *SCALE_X 0.608961           *SCALE_Y 0.608961         }
+        {           *FRAME 451           *TIME 15.0333           *X 22.0681           *Y 8.87794           *SCALE_X 0.608961           *SCALE_Y 0.608961         }
+      }
+    }
+  }
+  {
+    *TYPE "DECO_ELEMENT" *NAME "DecoElement90" *POS { *X -14.5502 *Y 9.72884 }
+*SCALE { *X 0.608961 *Y 0.608961 }
+*Z 5.12090     *COLOR_R 0.726563
+    *COLOR_G 0.808594
+    *COLOR_B 0.828125
+    *SPRITE_ANIM "SpriteAnimGraphs/Pajaro.sag"
+    *MOVIL
+    {
+      *FPS 30.0000       *MODE 1       *TARGETS
+      {
+        {           *FRAME 0           *TIME 0.000000           *X -14.5502           *Y 9.72884           *SCALE_X 0.608961           *SCALE_Y 0.608961         }
+        {           *FRAME 451           *TIME 15.0333           *X 21.9333           *Y 9.72884           *SCALE_X 0.608961           *SCALE_Y 0.608961         }
+      }
+    }
+  }
+  {
+    *TYPE "DECO_ELEMENT" *NAME "DecoElement91" *POS { *X -13.7662 *Y 9.86371 }
+*SCALE { *X 0.608961 *Y 0.608961 }
+*Z 5.12090     *COLOR_R 0.906250
+    *COLOR_G 0.875000
+    *COLOR_B 0.824219
+    *SPRITE_ANIM "SpriteAnimGraphs/Pajaro02.sag"
+    *MOVIL
+    {
+      *FPS 30.0000       *MODE 1       *TARGETS
+      {
+        {           *FRAME 0           *TIME 0.000000           *X -13.7662           *Y 9.86371           *SCALE_X 0.608961           *SCALE_Y 0.608961         }
+        {           *FRAME 451           *TIME 15.0333           *X 22.7173           *Y 9.86371           *SCALE_X 0.608961           *SCALE_Y 0.608961         }
+      }
+    }
+  }
+  {
+    *TYPE "DECO_ELEMENT" *NAME "DecoElement92" *POS { *X -13.5420 *Y 9.14684 }
+*SCALE { *X 0.608961 *Y 0.608961 }
+*Z 5.12090     *COLOR_R 0.707031
+    *COLOR_G 0.796875
+    *COLOR_B 0.816406
+    *SPRITE_ANIM "SpriteAnimGraphs/Pajaro.sag"
+    *MOVIL
+    {
+      *FPS 30.0000       *MODE 1       *TARGETS
+      {
+        {           *FRAME 0           *TIME 0.000000           *X -13.5420           *Y 9.14684           *SCALE_X 0.608961           *SCALE_Y 0.608961         }
+        {           *FRAME 451           *TIME 15.0333           *X 22.9415           *Y 9.14684           *SCALE_X 0.608961           *SCALE_Y 0.608961         }
+      }
+    }
+  }
+  {
+    *TYPE "DECO_ELEMENT" *NAME "DecoElement93" *POS { *X -15.1260 *Y 9.25681 }
+*SCALE { *X 0.608961 *Y 0.608961 }
+*Z 5.12090     *COLOR_R 0.707031
+    *COLOR_G 0.796875
+    *COLOR_B 0.816406
+    *SPRITE_ANIM "SpriteAnimGraphs/Pajaro02.sag"
+    *MOVIL
+    {
+      *FPS 30.0000       *MODE 1       *TARGETS
+      {
+        {           *FRAME 0           *TIME 0.000000           *X -15.1260           *Y 9.25681           *SCALE_X 0.608961           *SCALE_Y 0.608961         }
+        {           *FRAME 451           *TIME 15.0333           *X 21.3575           *Y 9.25681           *SCALE_X 0.608961           *SCALE_Y 0.608961         }
+      }
+    }
+  }
+  {
+    *TYPE "DECO_ELEMENT" *NAME "DecoElement94" *POS { *X -1.30994 *Y 11.2072 }
+*SCALE { *X 1.38298 *Y 1.38298 }
+*Z -3.28954e-008     *COLOR_R 0.785156
+    *COLOR_G 0.796875
+    *COLOR_B 0.750000
+    *SPRITE_ANIM "SpriteAnimGraphs/Banderines01.sag"
+    *MOVIL
+    {
+      *FPS 30.0000       *MODE 1       *TARGETS
+      {
+        {           *FRAME 0           *TIME 0.000000           *X -1.30994           *Y 11.2072           *SCALE_X 1.38298           *SCALE_Y 1.38298         }
+      }
+    }
+  }
+  {
+    *TYPE "DECO_ELEMENT" *NAME "DecoElement95" *POS { *X 0.517482 *Y 11.1653 }
+*SCALE { *X 1.38298 *Y 1.38298 }
+*Z -3.10207e-008     *COLOR_R 0.804688
+    *COLOR_G 0.820313
+    *COLOR_B 0.410156
+    *SPRITE_ANIM "SpriteAnimGraphs/Banderines02.sag"
+    *MOVIL
+    {
+      *FPS 30.0000       *MODE 1       *TARGETS
+      {
+        {           *FRAME 0           *TIME 0.000000           *X 0.517482           *Y 11.1653           *SCALE_X 1.38298           *SCALE_Y 1.38298         }
+      }
+    }
+  }
+  {
+    *TYPE "DECO_ELEMENT" *NAME "DecoElement96" *POS { *X 4.36287 *Y 11.3447 }
+*ROT 3.42405 *SCALE { *X 1.38298 *Y 1.38298 }
+*Z -3.10207e-008     *COLOR_R 0.472656
+    *COLOR_G 0.605469
+    *COLOR_B 0.410156
+    *SPRITE_ANIM "SpriteAnimGraphs/Banderines02.sag"
+    *MOVIL
+    {
+      *FPS 30.0000       *MODE 1       *TARGETS
+      {
+        {           *FRAME 0           *TIME 0.000000           *X 4.36287           *Y 11.3447           *ROT 3.42405           *SCALE_X 1.38298           *SCALE_Y 1.38298         }
+      }
+    }
+  }
+  {
+    *TYPE "DECO_ELEMENT" *NAME "DecoElement97" *POS { *X 2.41125 *Y 11.2073 }
+*ROT 3.69422 *SCALE { *X 1.38298 *Y 1.38298 }
+*Z -3.10207e-008     *COLOR_R 0.410156
+    *COLOR_G 0.476563
+    *COLOR_B 0.691406
+    *SPRITE_ANIM "SpriteAnimGraphs/Banderines01.sag"
+    *MOVIL
+    {
+      *FPS 30.0000       *MODE 1       *TARGETS
+      {
+        {           *FRAME 0           *TIME 0.000000           *X 2.41125           *Y 11.2073           *ROT 3.69422           *SCALE_X 1.38298           *SCALE_Y 1.38298         }
+      }
+    }
+  }
+  {
+    *TYPE "DECO_ELEMENT" *NAME "DecoElement98" *POS { *X 5.96343 *Y 11.5717 }
+*ROT 10.7321 *SCALE { *X 1.38298 *Y 1.38298 }
+*Z -3.34064e-008     *COLOR_R 0.652344
+    *COLOR_G 0.367188
+    *COLOR_B 0.367188
+    *SPRITE_ANIM "SpriteAnimGraphs/Banderines02.sag"
+    *MOVIL
+    {
+      *FPS 30.0000       *MODE 1       *TARGETS
+      {
+        {           *FRAME 0           *TIME 0.000000           *X 5.96343           *Y 11.5717           *ROT 10.7321           *SCALE_X 1.38298           *SCALE_Y 1.38298         }
+      }
+    }
+  }
+  {
+    *TYPE "DECO_ELEMENT" *NAME "DecoElement99" *POS { *X 10.0729 *Y 2.08731 }
+*SCALE { *X 1.02621 *Y 1.02621 }
+*Z 1.31916     *SPRITE_ANIM "SpriteAnimGraphs/Pez.sag"
+    *MOVIL
+    {
+      *FPS 30.0000       *MODE 1       *TARGETS
+      {
+        {           *FRAME 0           *TIME 0.000000           *X 10.0729           *Y 2.08731           *SCALE_X 1.02621           *SCALE_Y 1.02621         }
+      }
+    }
+  }
+  {
+    *TYPE "DECO_ELEMENT" *NAME "DecoElement100" *POS { *X -3.42057 *Y 3.41440 }
+*SCALE { *X 0.862831 *Y 0.862831 }
+*Z -0.00743362     *SPRITE_ANIM "SpriteAnimGraphs/Ventilador.sag"
+    *MOVIL
+    {
+      *FPS 30.0000       *MODE 1       *TARGETS
+      {
+        {           *FRAME 0           *TIME 0.000000           *X -3.42057           *Y 3.41440           *SCALE_X 0.862831           *SCALE_Y 0.862831         }
+      }
+    }
+  }
+  {
+    *TYPE "DECO_ELEMENT" *NAME "DecoElement101" *POS { *X 20.9612 *Y 13.3929 }
+*SCALE { *X 0.612484 *Y 0.612484 }
+*Z 5.12090     *COLOR_R 0.832031
+    *COLOR_G 0.886719
+    *COLOR_B 0.898438
+    *SPRITE_ANIM "SpriteAnimGraphs/Pajaro.sag"
+    *MOVIL
+    {
+      *FPS 30.0000       *MODE 1       *TARGETS
+      {
+        {           *FRAME 0           *TIME 0.000000           *X 20.9612           *Y 13.3929           *SCALE_X 0.612484           *SCALE_Y 0.612484         }
+        {           *FRAME 501           *TIME 16.7000           *X -12.4895           *Y 13.3929           *SCALE_X 0.612484           *SCALE_Y 0.612484         }
+      }
+    }
+  }
+  {
+    *TYPE "DECO_ELEMENT" *NAME "DecoElement102" *POS { *X -17.6126 *Y 5.16739 }
+*SCALE { *X 0.608961 *Y 0.608961 }
+*Z 5.12090     *COLOR_R 0.816406
+    *COLOR_G 0.867188
+    *COLOR_B 0.812500
+    *SPRITE_ANIM "SpriteAnimGraphs/Pajaro.sag"
+    *MOVIL
+    {
+      *FPS 30.0000       *MODE 1       *TARGETS
+      {
+        {           *FRAME 0           *TIME 0.000000           *X -17.6126           *Y 5.16739           *SCALE_X 0.608961           *SCALE_Y 0.608961         }
+        {           *FRAME 650           *TIME 21.6667           *X 20.4828           *Y 5.16739           *SCALE_X 0.608961           *SCALE_Y 0.608961         }
+      }
+    }
+  }
+  {
+    *TYPE "DECO_ELEMENT" *NAME "DecoElement103" *POS { *X -17.8369 *Y 5.88426 }
+*SCALE { *X 0.608961 *Y 0.608961 }
+*Z 5.12090     *COLOR_R 0.726563
+    *COLOR_G 0.808594
+    *COLOR_B 0.828125
+    *SPRITE_ANIM "SpriteAnimGraphs/Pajaro02.sag"
+    *MOVIL
+    {
+      *FPS 30.0000       *MODE 1       *TARGETS
+      {
+        {           *FRAME 0           *TIME 0.000000           *X -17.8369           *Y 5.88426           *SCALE_X 0.608961           *SCALE_Y 0.608961         }
+        {           *FRAME 650           *TIME 21.6667           *X 20.2585           *Y 5.88426           *SCALE_X 0.608961           *SCALE_Y 0.608961         }
+      }
+    }
+  }
+  {
+    *TYPE "DECO_ELEMENT" *NAME "DecoElement104" *POS { *X -20.5582 *Y 9.77647 }
+*SCALE { *X 0.608961 *Y 0.608961 }
+*Z 5.12090     *COLOR_R 0.785156
+    *COLOR_G 0.796875
+    *COLOR_B 0.750000
+    *SPRITE_ANIM "SpriteAnimGraphs/Pajaro.sag"
+    *MOVIL
+    {
+      *FPS 30.0000       *MODE 1       *TARGETS
+      {
+        {           *FRAME 0           *TIME 0.000000           *X -20.5582           *Y 9.77647           *SCALE_X 0.608961           *SCALE_Y 0.608961         }
+        {           *FRAME 452           *TIME 15.0667           *X 20.0861           *Y 9.77647           *SCALE_X 0.608961           *SCALE_Y 0.608961         }
+      }
+    }
+  }
+  {
+    *TYPE "DOOR" *NAME "Door02" *POS { *X 4.92041 *Y 7.87992 }
+    *DST_LEVEL "HUBWORLD3_WORLD1"
+    *IND_TEXT "TEXT_WORLD1"
+    *REQ_STARS 10
+    *REQ_STAR_TEXT "TEXT_LOCK_WORLD_WORD1"
+    *HUB_DOOR 1
+  }
+  {
+    *TYPE "DOOR" *NAME "Door03" *POS { *X -1.21446 *Y 7.89088 }
+    *DST_LEVEL "HUBWORLD3_WORLD2"
+    *IND_TEXT "TEXT_WORLD2"
+    *REQ_STARS 20
+    *REQ_STAR_TEXT "TEXT_LOCK_WORLD_WORD2"
+    *HUB_DOOR 1
+  }
+  {
+    *TYPE "PLAYER_SPAWNER" *NAME "PlayerSpawner" *POS { *X -5.53525 *Y 0.168957 }
+  }
+  {
+    *TYPE "PLAYER_SPAWNER" *NAME "PlayerSpawner01" *POS { *X -4.14977 *Y 0.168957 }
+  }
+  {
+    *TYPE "PLAYER_SPAWNER" *NAME "PlayerSpawner02" *POS { *X -2.76008 *Y 0.168957 }
+  }
+  {
+    *TYPE "PLAYER_SPAWNER" *NAME "PlayerSpawner03" *POS { *X -1.35954 *Y 0.168957 }
+  }
+}
+*NUM_COINS 0.000000
